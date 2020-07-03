@@ -64,6 +64,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
     font-size: 100%;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
   }
 
 `
