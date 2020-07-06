@@ -31,7 +31,9 @@ const LastPosts = () => {
 
     return (
         <>
-            <S.SectionTitle>Últimos posts do blog</S.SectionTitle>
+            <S.Wrapper>
+                <S.SectionTitle>Últimos posts do blog</S.SectionTitle>
+            </S.Wrapper>
             <S.SectionWrapper>
                 <S.Section>
                     <S.LastPostsWrapper>
