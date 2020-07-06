@@ -67,5 +67,28 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  /* width */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d5afe;
+  border-radius: 0px;
+  transition: all .2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(173, 173, 173);
+}
+
 `
 export default GlobalStyles
