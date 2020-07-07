@@ -5,10 +5,12 @@ import { brand } from "./content";
 import * as S from './styled'
 
 const TopAppBar = () => (
-    <S.Header>
-        <S.Brand>{brand}</S.Brand>
-        <MenuLinks />
-    </S.Header >
+    <S.HeaderWrapper>
+        <S.Header>
+            <S.Brand>{brand}</S.Brand>
+            <MenuLinks />
+        </S.Header >
+    </S.HeaderWrapper >
 )
 
 export default TopAppBar
