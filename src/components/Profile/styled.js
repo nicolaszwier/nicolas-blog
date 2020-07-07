@@ -4,10 +4,11 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items:center;
   width: 100%;
-  padding: 2rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
 `
 
 export const ProfileName = styled.h1`
@@ -29,14 +30,13 @@ text-justify: distribute;
 color: rgba(255, 255, 255, 0.83);
 font-weight: 400;
 font-size: 1.3rem;
-line-height: 1.3;  
+line-height: 1.4;  
 margin: .5rem 2rem;
 &:first-child {
 margin-top: 1rem;
 }
 &:last-child {
 margin-bottom: 1rem;
-
 }
 
 `
