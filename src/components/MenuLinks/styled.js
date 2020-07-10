@@ -8,8 +8,9 @@ export const MenuLinksWrapper = styled.nav`
 
 export const MenuLinksList = styled.ul`
     font-size: 1.2rem;
-    font-weight:500;
+    font-weight: 700;
     display: flex;
+    align-items: center;
 `
 
 export const MenuLinksItem = styled.li`
@@ -19,16 +20,17 @@ export const MenuLinksItem = styled.li`
   }
   
   .active {
-    color: yellow;
+    color: var(--secondary);
+    font-weight: 700;
   }
 `
 
 export const MenuLinksLink = styled(Link)`
   text-decoration: none;
-  color: #FFF;
+  color: var(--textColorOnBackground);
    &:hover{
     transform: translateY(-4px);
-    color: #3D5AFE;
+    color: var(--secondary);
   }
 `
 
