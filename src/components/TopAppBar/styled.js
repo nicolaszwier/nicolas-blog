@@ -1,31 +1,43 @@
 
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const HeaderWrapper = styled.div`
-  background: #353535;
+  background: var(--primary);
   opacity: 0.95;
-  min-height: 100px;
+  min-height: 6rem;
   width: 100%;
   box-shadow: 0 1px 4px #00000036;
   position: sticky;
   top:0;
   z-index: 1000;
+  ${media.lessThan("medium")`
+    min-height: 5.5rem;
+  `}
 `
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items:center;
   width: 100%;
-  min-height: 100px;
+  min-height: 6rem;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
+
+   ${media.lessThan("medium")`
+    padding: 0 .8rem;
+    min-height: 5.5rem;
+  `}
 `
 
 export const Brand = styled.h1`
   font-size: 1.7rem;
   font-weight: bold;
-  color: #3d5AFE;
+  color: var(--secondary);
   white-space: nowrap;
   overflow: hidden;
+  ${media.lessThan("medium")`
+    font-size: 1.4rem;
+  `}
 `

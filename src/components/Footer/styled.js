@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   display: flex;
-  background: #353535;
+  background: var(--primary);
   min-height: 50px;
   justify-content: space-between;
   align-items:center;
@@ -13,9 +13,9 @@ export const Footer = styled.footer`
 `
 
 export const FooterText = styled.span`
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.83);
+  color: var(--secondaryTextColor);
   white-space: nowrap;
   overflow: hidden;
 `

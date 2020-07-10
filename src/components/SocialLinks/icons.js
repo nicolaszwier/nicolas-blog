@@ -1,4 +1,4 @@
-import { Github, Twitter, Codepen, Instagram, Moon, Linkedin } from "styled-icons/feather";
+import { Github, Twitter, Codepen, Instagram, Moon, Linkedin, Sun } from "styled-icons/feather";
 
 const Icons = {
     Github,
@@ -6,7 +6,8 @@ const Icons = {
     Codepen,
     Instagram,
     Moon,
-    Linkedin
+    Linkedin,
+    Sun
 }
 
 export default Icons

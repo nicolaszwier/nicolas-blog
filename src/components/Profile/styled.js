@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Section = styled.section`
   display: flex;
@@ -8,26 +9,36 @@ export const Section = styled.section`
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 1rem 1.5rem 3rem;
+  ${media.lessThan("medium")`
+    padding: 1rem 1rem 2rem;
+  `}
 `
 
 export const ProfileName = styled.h1`
-color: rgba(255, 255, 255, 0.83);
+color: var(--textColorOnBackground);
 font-weight: 700;
 font-size: 2rem;  
 margin: 1rem 1rem 0.5rem;
+ ${media.lessThan("medium")`
+   font-size: 1.7rem; 
+   margin: 1rem .5rem 0.5rem;
+  `}
 `
 export const BriefDescription = styled.h2`
-color: rgba(255, 255, 255, 0.83);
+color: var(--textColorOnBackground);
 font-weight: 400;
 font-size: 1.5rem;  
 margin: 0 1rem;
+${media.lessThan("medium")`
+   font-size: 1.25rem; 
+  `}
 `
 
 export const Paragraph = styled.p`
 text-align: center;
 text-justify: distribute;
-color: rgba(255, 255, 255, 0.83);
+color: var(--secondaryTextColor);
 font-weight: 400;
 font-size: 1.3rem;
 line-height: 1.4;  
@@ -38,5 +49,9 @@ margin-top: 1rem;
 &:last-child {
 margin-bottom: 1rem;
 }
+
+${media.lessThan("medium")`
+  margin: .2rem .5rem; 
+  `}
 
 `
