@@ -52,6 +52,7 @@ export const MainContent = styled.section`
 
   ${media.lessThan("medium")`
      padding: 1rem 0;
+  max-width: 100%;
   `}
 
   p,
@@ -182,6 +183,10 @@ export const MainContent = styled.section`
   }
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
+    ${media.lessThan("medium")`
+     padding: 1rem .2rem .3rem;
+     margin: 2.125rem .3rem;
+    `}
   }
   .instagram-media {
     margin: 1rem auto !important;
