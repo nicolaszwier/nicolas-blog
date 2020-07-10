@@ -11,9 +11,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       getNode,
       basePath: "pages",
     })
-
-    console.log(node, getNode, actions)
-
     // Creates new query'able field with name of 'slug'
     createNodeField({
       node,
