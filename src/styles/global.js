@@ -60,11 +60,30 @@ const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
   
   body {
-    background: #212121;
+    &.dark {
+      --background: #212121;
+      --primary: #353535;
+      --secondary: #3D5AFE;
+      --textColorOnBackground: rgba(255, 255, 255, 0.85);
+      --secondaryTextColor: rgba(255,255,255,0.70);
+      --highlight: #353535;
+      --highlightDarker: #2e2e2e;
+    }
+    &.light {
+      --background: #F2F2F2;
+      --primary: #FFF;
+      --secondary: #3D5AFE;
+      --textColorOnBackground: rgba(0, 0, 0, 0.85);
+      --secondaryTextColor: rgba(0,0,0,0.65);
+      --highlightDarker: #3D5AFE;
+    }
+    
+    background: var(--background);
     line-height: 1;
     font-size: 100%;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
   }
 
   /* width */
@@ -76,12 +95,14 @@ const GlobalStyles = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track {
-  background: #00000000;
+  background: var(--secondary);
   border-radius: 0px;
+  width: 8px;
+  /* border-left: 1px solid var(--primary) */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3d5afe;
+  background: var(--primary);
   border-radius: 0px;
   transition: all .2s ease;
 }
