@@ -26,7 +26,6 @@ const Cover = props => (
     `}
     render={data => {
       const image = data.images.edges.find(n => {
-        console.log(props.filename)
         return n.node.relativePath.includes(props.filename)
       })
       if (!image) {
