@@ -24,7 +24,6 @@ export const Card = styled(Link)`
       transform: translateY(-4px);
       filter: brightness(95%);
       box-shadow: 1px 1px 4px #0000007d;
-      /* border: 2px solid transparent; */
   }
 
 `

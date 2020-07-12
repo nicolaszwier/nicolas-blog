@@ -36,7 +36,7 @@ export const ImageWrapper = styled(Img)`
 `
 
 export const PostTitle = styled.h1`
-color: var(--secondaryTextColor);
+color: var(--textColorOnBackground);
 font-weight: 700;
 font-size: 1.6rem;  
 line-height: 1.2;  
