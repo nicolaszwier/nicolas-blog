@@ -3,7 +3,7 @@ module.exports = {
     title: `nicolasz.dev`,
     description: `This is my personal website with a blog.`,
     author: `@nicolaszwier`,
-    siteUrl: `https://nicolaszdev.netlify.app`
+    siteUrl: `https://nicolasz.dev`
   },
   plugins: [
     `gatsby-plugin-styled-components`,

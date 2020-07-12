@@ -2,7 +2,7 @@ backend:
   name: github
   repo: nicolaszwier/nicolas-blog
   branch: master
-  site_domain: nicolaszdev.netlify.app
+  site_domain: nicolasz.dev
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
