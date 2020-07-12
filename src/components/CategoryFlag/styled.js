@@ -7,7 +7,7 @@ export const FlagWrapper = styled.div`
   justify-content: center;
   align-items:center;
   padding: .3rem 1rem;
-  border-radius: 8px;
+  border-radius: 30px;
   max-width: 100px;
   margin: 0 1rem 1rem;
 `
