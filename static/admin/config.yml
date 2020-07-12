@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: nicolaszwier/nicolas-blog
+  branch: master
+  site_domain: nicolaszdev.netlify.app
+
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+      - { label: "image", name: "image", widget: "image" }
+      - {
+        label: "Category",
+        name: "category",
+        widget: "select",
+        options: ["css", "js", "html", "react", "angular", "dev", "misc"]
+      }
+      - {
+        label: "Category background",
+        name: "categoryBackground",
+        widget: "select",
+        options: [
+          { label: 'CSS', value: '#2979ff' },
+          { label: 'JS', value: '#ffea00' },
+          { label: 'HTML', value: '#ff6e40' },
+          { label: 'React', value: '#40c4ff' },
+          { label: 'Angular', value: '#ff1744' },
+          { label: 'Dev', value: '#637a91' },
+          { label: 'Misc', value: '#00e676' },
+        ]
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
