@@ -6,7 +6,7 @@ export const FlagWrapper = styled.div`
   background: ${props => props.categoryBackground ? props.categoryBackground : '#ffff39d4'};
   justify-content: center;
   align-items:center;
-  padding: .2rem 1rem;
+  padding: .3rem 1rem;
   border-radius: 8px;
   max-width: 100px;
   margin: 0 1rem 1rem;
@@ -14,6 +14,6 @@ export const FlagWrapper = styled.div`
 
 export const FlagName = styled.span`
 color: rgba(0, 0, 0, 0.83);
-font-weight: 400;
+font-weight: 700;
 font-size: .7rem;  
 `
