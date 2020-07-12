@@ -1,10 +1,13 @@
 
 import styled from "styled-components";
+import Img from 'gatsby-image'
 import { Link } from "gatsby"
+
 
 export const Card = styled(Link)`
   text-decoration: none;
   display: flex;
+  overflow: hidden;
   background: var(--primary);
   flex-direction:column;
   justify-content: space-between;
@@ -25,9 +28,16 @@ export const Card = styled(Link)`
   }
 `
 
+export const ImageWrapper = styled(Img)`
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  max-height: 300px;
+`
+
 export const PostTitle = styled.h1`
-color: var(--textColorOnBackground);
-font-weight: 400;
+color: var(--secondaryTextColor);
+font-weight: 700;
 font-size: 1.6rem;  
 line-height: 1.2;  
 margin: 1rem 1rem 0.5rem;
