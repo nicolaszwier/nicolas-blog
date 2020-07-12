@@ -15,7 +15,7 @@ const Cover = props => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 620) {
+                sizes(maxWidth: 1280) {
                   ...GatsbyImageSharpSizes
                 }
               }
