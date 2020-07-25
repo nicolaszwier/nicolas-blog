@@ -2,7 +2,7 @@
 title: Criando temas em seu site utilizando CSS variables
 description: Como criar temas em seu site usando CSS variables e Javascript.
 date: 2020-07-24 11:10:05
-image: assets/img/css_themes.jpg
+image: /assets/img/css_themes.jpg
 category: css
 categoryBackground: "#2979ff"
 ---
