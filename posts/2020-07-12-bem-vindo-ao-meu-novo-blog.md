@@ -2,7 +2,7 @@
 title: Bem vindo ao meu novo blog!
 description: "Uma breve apresentação e descrição do objetivo desse novo blog. "
 date: 2020-07-12 05:22:36
-image: assets/img/bem-vindo-ao-meu-novo-blog.png
+image: /assets/img/bem-vindo-ao-meu-novo-blog.png
 category: misc
 categoryBackground: "#00e676"
 ---

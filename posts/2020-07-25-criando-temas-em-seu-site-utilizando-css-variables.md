@@ -1,18 +1,23 @@
 ---
 title: Criando temas em seu site utilizando CSS variables
 description: Como criar temas em seu site usando CSS variables e Javascript.
-date: 2020-07-24 11:10:05
+date: 2020-07-25 12:10:05
 image: /assets/img/css_themes.jpg
 category: css
 categoryBackground: "#2979ff"
 ---
 ### Objetivo
 
+
 O objetivo desse tutorial é ensinar a criar temas em seu site usando CSS e Javascript. É um processo bem simples e para isso, vamos utilizar variáveis no CSS para definir as cores de cada tema. Vou criar nesse exemplo apenas os temas light e dark, porém o conceito é o mesmo para criar o tema que você desejar.
 
-Veja abaixo o resultado:
+Veja abaixo o resultado dos dois temas:
 
-![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/theme-final-result.gif "GIF - Resultado final do tutorial sobre temas no CSS")
+Light 🌞
+![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/light_theme.png)
+
+Dark 🌚
+![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/dark_theme.png)
 
 ### Como começar
 
@@ -161,7 +166,9 @@ function toggleTheme() {
 }
 ```
 
-E pronto! Já está funcionando a troca dos temas light/dark em nossa página. Confira como ficou todo o código e o resultado funcionando [nesse link do codepen](https://codepen.io/nicolaszwier/pen/LYGaopR).
+E pronto! Já está funcionando a troca dos temas light/dark em nossa página. Confira como ficou todo o código e o resultado funcionando:
+
+https://codepen.io/nicolaszwier/pen/LYGaopR
 
 A dica de hoje foi bastante simples, porém pode ser útil em algum momento que você precise trabalhar com temas na sua página e queira gravar esse tema para manter sempre o último que o usuário usou.
 
