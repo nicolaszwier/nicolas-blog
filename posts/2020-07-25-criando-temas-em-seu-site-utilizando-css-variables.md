@@ -12,7 +12,7 @@ O objetivo desse tutorial é ensinar a criar temas em seu site usando CSS e Java
 
 Veja abaixo o resultado:
 
-![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/theme-final-result.gif)
+![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/theme-final-result.gif "GIF - Resultado final do tutorial sobre temas no CSS")
 
 ### Como começar
 
