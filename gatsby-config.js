@@ -46,6 +46,13 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: "@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400
+            }
+          },
           `gatsby-remark-lazy-load`,
           'gatsby-remark-prismjs',
         ],
