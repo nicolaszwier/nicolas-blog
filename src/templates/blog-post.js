@@ -10,8 +10,8 @@ import * as S from "../components/Post/styled"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
-  const next = pageContext.nextPost
-  const previous = pageContext.previousPost
+  // const next = pageContext.nextPost
+  // const previous = pageContext.previousPost
 
   return (
     <Layout>
