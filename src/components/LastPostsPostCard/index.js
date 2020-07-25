@@ -5,11 +5,9 @@ import Cover from './cover'
 
 import * as S from './styled'
 
-const LastPostsPostCard = ({ slug, title, date, category, categoryBackground, timeToRead }) => {
+const LastPostsPostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead }) => {
 
-    let tempSlug = slug.slice(0, -1)
-    const resolveCoverPath = tempSlug.slice(5)
-
+    const resolveCoverPath = image.slice(12)
     return (
 
         <S.Card to={slug}>
