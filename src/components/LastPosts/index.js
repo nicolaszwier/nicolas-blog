@@ -18,7 +18,8 @@ const LastPosts = () => {
                             categoryBackground
                             category
                             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-                            title
+                            title,
+                            image
                         }
                         timeToRead
                     }
@@ -40,18 +41,20 @@ const LastPosts = () => {
                         {lastPosts.map(
                             ({
                                 node: {
-                                    frontmatter: { categoryBackground, category, date, title },
+                                    frontmatter: { categoryBackground, category, date, title, image },
                                     timeToRead,
                                     fields: { slug },
                                 },
                             }) => (
                                     <LastPostsPostCard
+                                        key={title}
                                         slug={slug}
                                         title={title}
                                         date={date}
                                         category={category}
                                         categoryBackground={categoryBackground}
                                         timeToRead={timeToRead}
+                                        image={image}
                                     />
                                 )
                         )}
