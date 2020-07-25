@@ -16,10 +16,6 @@ Veja abaixo o resultado:
 
 ### Como começar
 
-Crie um arquivo html com a estrutura do HTML 5. Se você estiver usando o VSCode digite `html:5` e de um enter, automaticamente será criado a estrutura html necessária.
-
-Então crie o arquivo javascript e o arquivo de estilos.
-
 Para começar, vamos criar os arquivos necessários para o HTML, CSS e Javascript:
 
 ```
