@@ -2,7 +2,7 @@
 title: Criando temas em seu site utilizando CSS variables
 description: Como criar temas em seu site usando CSS variables e Javascript.
 date: 2020-07-24 11:10:05
-image: assets/img/css-word-lettering-typography-design-illustration-with-line-icons-ornaments-orange_9233-187.jpg
+image: assets/img/css-themes.jpg
 category: css
 categoryBackground: "#2979ff"
 ---
@@ -12,13 +12,21 @@ O objetivo desse tutorial é ensinar a criar temas em seu site usando CSS e Java
 
 Veja abaixo o resultado:
 
-![Coding](/assets/img/codinga.png)
+![GIF - Resultado final do tutorial sobre temas no CSS](/assets/img/theme-final-result.gif)
 
 ### Como começar
 
-Apenas crie um arquivo html com a estrutura do HTML 5. Se você estiver usando o VS code digite `html:5` e de um enter, automaticamente será criado a estrutura html necessária.
+Crie um arquivo html com a estrutura do HTML 5. Se você estiver usando o VSCode digite `html:5` e de um enter, automaticamente será criado a estrutura html necessária.
 
-Para facilitar, eu vou criar o css e o javascript dentro desse mesmo arquivo html, porém você pode organizar em arquivos separados em seu projeto.
+Então crie o arquivo javascript e o arquivo de estilos.
+
+Para começar, vamos criar os arquivos necessários para o HTML, CSS e Javascript:
+
+```
+index.html
+style.css
+index.js
+```
 
 ### Criando as variáveis CSS
 
@@ -41,12 +49,19 @@ Começamos criando as variáveis necessárias em nosso CSS. Criei duas classes, 
     }
 ```
 
-Leia mais sobre variáveis no CSS [aqui](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties).
+Após criar as duas classes você pode escolher qual será o tema inicial da sua página e definir essa classe na tag `body` do HTML, eu vou iniciar com o tema dark:
+
+```HTML
+<body class="dark">
+  <!-- todos os outros elementos aqui -->
+</body>
+```
+
+Dessa forma, as variáveis que criamos no CSS estarão disponíveis em tudo que colocarmos dentro do body.
 
 ### Criando a estrutura do HTML e usando as variáveis para definir as cores
 
-Após definirmos as variáveis podemos aplicar elas em nossos elementos. Eu customizei alguns componentes como uma navbar e alguns cards para servir de exemplo. Preste atenção no exemplo abaixo como usamos nossas variáveis declaradas anteriormente, devemos usar o ```var(--nomeDaVariavel)```. O CSS ficou assim:
-
+Após definirmos as variáveis podemos aplicar elas em nossos elementos. Eu customizei alguns componentes como uma navbar e alguns cards para servir de exemplo. Preste atenção no exemplo abaixo como usamos nossas variáveis declaradas anteriormente, devemos usar o `var(--nomeDaVariavel)`. O CSS ficou assim:
 
 ```CSS
   body {
@@ -109,21 +124,20 @@ Após definirmos as variáveis podemos aplicar elas em nossos elementos. Eu cust
     margin: 0.5rem 1rem;
     color: var(--secondaryTextColor);
   }
-
 ```
 
 ### Criando função para definir o tema
 
-O último passo é criar o script para para trocar o tema ao clicar no botão. Criei uma função anônima que sempre é executada ao carregar o script, essa função define o tema preferido e declara outra função na variável ```window``` que fica disponível para acessarmos de qualquer arquivo do nosso projeto. Para gravar o tema atual e mante-lo sempre que reiniciar a página vamos utilizar o localStorage. O resultado ficou assim:
+O último passo é criar o script para para trocar o tema ao clicar no botão. Criei uma função anônima que sempre é executada ao carregar o script, essa função define o tema preferido e declara outra função na variável `window` que fica disponível para acessarmos de qualquer arquivo do nosso projeto. Para gravar o tema atual e mantê-lo sempre que reiniciar a página vamos utilizar o localStorage. O resultado ficou assim:
 
 ```Javascript
 (function () {
+    let preferredTheme;
     function setTheme(newTheme) {
         window.__theme = newTheme;
         preferredTheme = newTheme;
         document.body.className = newTheme;
     }
-    let preferredTheme;
     preferredTheme = localStorage.getItem('theme');
     window.__setPreferredTheme = (newTheme) => {
         setTheme(newTheme);
@@ -131,10 +145,15 @@ O último passo é criar o script para para trocar o tema ao clicar no botão. C
     }
     setTheme(preferredTheme || 'dark');
 })();
-
 ```
 
-Após isso eu adicionei um listener em um botão que sempre que clicado vai disparar uma função. Essa função será responsável por definir o novo tema.
+No HTML, usei um botão que será responsável por chamar a função de troca de tema ao ser clicado
+
+```HTML
+ <button id="themeToggle">Toggle theme</button>
+```
+
+Após isso, no Javascript adicionei um listener nesse botão, e sempre que clicado vai disparar uma função. Essa função vai definir o novo tema.
 
 ```Javascript
 const buttonToggle = document.getElementById("themeToggle");
@@ -146,5 +165,14 @@ function toggleTheme() {
 }
 ```
 
-E pronto! Já está funcionando a troca dos temas light/dark em nossa página. Confira como ficou todo o código e o resultado funcionando [nesse link](https://codepen.io/nicolaszwier/pen/LYGaopR).
+E pronto! Já está funcionando a troca dos temas light/dark em nossa página. Confira como ficou todo o código e o resultado funcionando [nesse link do codepen](https://codepen.io/nicolaszwier/pen/LYGaopR).
 
+A dica de hoje foi bastante simples, porém pode ser útil em algum momento que você precise trabalhar com temas na sua página e queira gravar esse tema para manter sempre o último que o usuário usou.
+
+Se você encontrou algum erro, ou tem alguma sugestão a acrescentar sobre isso, sinta-se a vontade para me avisar.
+
+Obrigado! 
+
+### Links úteis sobre o assunto
+
+* [CSS variables.](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties)
