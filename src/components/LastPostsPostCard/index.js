@@ -14,7 +14,7 @@ const LastPostsPostCard = ({ slug, title, date, category, categoryBackground, im
             <Cover filename={resolveCoverPath} alt={title} />
             <S.PostTitle>{title}</S.PostTitle>
             <S.PostInfo>
-                <S.PostDate>{date}</S.PostDate>
+                <S.PostDate>{date} • {timeToRead} min de leitura</S.PostDate>
                 <CategoryFlag category={category} categoryBackground={categoryBackground} />
             </S.PostInfo>
         </S.Card>
