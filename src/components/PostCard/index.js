@@ -5,10 +5,10 @@ import Cover from './cover'
 
 import * as S from './styled'
 
-const PostCard = ({ slug, title, date, category, categoryBackground, timeToRead }) => {
+const PostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead }) => {
 
     const resolveSlug = slug.slice(5)
-    const resolveCoverPath = resolveSlug.slice(0, -1)
+    const resolveCoverPath = image.slice(12)
 
     return (
 
