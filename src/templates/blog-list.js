@@ -6,14 +6,14 @@ import SEO from "../components/seo"
 import PostsList from "../components/PostsList"
 
 const BlogList = props => {
-    const postList = props.data.allMarkdownRemark.edges
+  const postList = props.data.allMarkdownRemark.edges
 
-    return (
-        <Layout>
-            <SEO title="Blog" />
-            <PostsList postList={postList} />
-        </Layout>
-    )
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <PostsList postList={postList} />
+    </Layout>
+  )
 }
 
 export const query = graphql`
@@ -33,7 +33,8 @@ export const query = graphql`
             category
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
-            title
+            title, 
+            image
           }
           timeToRead
         }

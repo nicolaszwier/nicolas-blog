@@ -11,7 +11,7 @@ const PostsList = ({ postList }) => {
                 {postList.map(
                     ({
                         node: {
-                            frontmatter: { categoryBackground, category, date, title },
+                            frontmatter: { categoryBackground, category, date, image, title },
                             timeToRead,
                             fields: { slug },
                         },
@@ -23,6 +23,7 @@ const PostsList = ({ postList }) => {
                                 category={category}
                                 categoryBackground={categoryBackground}
                                 timeToRead={timeToRead}
+                                image={image}
                             />
                         )
                 )}
