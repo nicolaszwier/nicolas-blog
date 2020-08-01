@@ -1,6 +1,5 @@
 ---
-title: Modal responsivo com animação e listener para fechar o modal quando
-  clicar fora dele
+title: Modal com animação e listener para fechar quando clicar fora
 description: Como criar um modal responsivo usando HTML, CSS e Javascript usando
   animações e criando uma função para fechar o modal quando clicar fora dele.
 date: 2020-08-01 03:17:02
