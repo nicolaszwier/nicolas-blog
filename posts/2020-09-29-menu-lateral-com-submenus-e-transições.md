@@ -295,4 +295,13 @@ body {
 ```
 
 Se você atualizar a página após adicionar o CSS vai perceber que o visual do menu mudou completamente. Agora sinta-se a vontade para estilizar seu menu da maneira que preferir. 😉
+Você também pode usar essa mesma ideia para outros componentes de sua aplicação, como um menu dropdown.
+
+### Resultado final 
+
+Confira como ficou todo o código e a demo:
+
+https://codepen.io/nicolaszwier/pen/vYGPxyd
+
+Por hoje é isso. Caso ficou com alguma dúvida fique a vontade para deixar um comentário ou me mandar uma mensagem. Obrigado e até a próxima! 😀   
 
