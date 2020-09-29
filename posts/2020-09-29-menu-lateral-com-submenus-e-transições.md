@@ -23,7 +23,7 @@ O HTML será a parte mais simples, pois iremos criar os menus e os submenus dina
 </aside>
 ```
 
-Apenas criei um elemento usando a tag `aside`, defini um id para ela e usei a classe `sidebar-wrapper`, que ainda vamos criar lá no CSS.
+Apenas criei um elemento usando a tag `aside`, defini um id para ela e usei a classe `sidebar-wrapper`, que posteriormente vamos criar lá no CSS.
 
 ### Criando as classes de transições no CSS
 
@@ -76,7 +76,7 @@ Funciona da seguinte forma: ao fazer a troca do menu principal para o menu secun
 
 E então no menu secundário que vai entrar na tela colocamos as seguintes classes: `.menu-secondary-enter`, que inicia o elemento em uma posição de 110% para a direita, e a classe `.menu-secondary-enter-active`, que move ele para a posição 0% usando o transform, também usamos a propriedade `transition`, para que o menu entre de forma suave na tela.
 
-O que acabamos de vez, é quando vamos fazer a transição do menu principal para um menu secundário. Mas e para fazer ao contrário? Navegar do menu secundário para o principal? 
+O que acabamos de ver, é quando vamos fazer a transição do menu principal para um menu secundário. Mas e para fazer ao contrário? Navegar do menu secundário para o principal? 
 
 Fazemos a mesma coisa, porém usando as outras classes. Primeiro tiramos o menu secundário ativo colocando as classes `.menu-secondary-exit` e `.menu-secondary-exit-active`, e então ativamos novamente o menu principal com as duas classes que sobraram: `.menu-primary-enter` e `.menu-primary-enter-active`.
 
@@ -130,6 +130,8 @@ const menu = [
 
 Repare que o menu principal possui dois itens, e cada um deles possui uma propriedade child, que recebe mais um array com o itens do submenu.
 
+Alguns elementos também possuem a propriedade 'click', essa propriedade recebe uma função (vamos criá-la mais tarde). No momento que formos montar o menu, o item de menu correspondente a esse objeto que possui essa propriedade vai receber essa função no evento ```onclick```. Se você quiser usar links ao inves de uma lista que recebe funções, você pode mudar essa propriedade para, por exemplo, ```path: 'https://nicolasz.dev'``` e passar esse valor para a propriedade href do link.
+
 Agora vamos desenvolver a função responsável por pegar esse array e criar os elementos HTML. 
 
 ```Javascript
@@ -166,7 +168,7 @@ const createChildMenu = (items) => {
 }
 ```
 
-Novamente pegamos a sidebar e criamos um novo elemento. A diferença agora é que a classe recebida além da classe 'menu' o elemento recebe também as classes de menu secundário: ```menu menu-secondary-exit menu-secondary-exit-active```. O id do elemento não será mais 'menu', mas sim o nome do menu pai dele, fazemos isso acessando o primeiro elemento do array ```items``` e usando a propriedade ```parent```.
+Novamente pegamos a sidebar e criamos um novo elemento. A diferença agora é que além da classe 'menu' o elemento recebe também as classes de menu secundário: ```menu menu-secondary-exit menu-secondary-exit-active```. O id do elemento não será mais 'menu', mas sim o nome do menu pai dele, fazemos isso acessando o primeiro elemento do array ```items``` e usando a propriedade ```parent```.
 E a outra diferença é que nessa função não usamos o array menu para fazer o map e criar os elementos, mas fazemos no array items que é recebido como argumento dessa função.
 
 Agora vamos criar a função ```createMenuItem```, que chamamos nas duas funções anteriores. Essa função é responsável por criar nossos itens de menu. Veja na sequência:
@@ -188,6 +190,8 @@ const createMenuItem = (item) => {
 ```
 
 Essa função recebe um elemento do array como parâmetro, e a responsabilidade dela é nos devolver um elemento ```li``` pronto para injetar dentro do menu.
+
+Caso você queira usar links ao invés de funções para os itens de menu, você pode aqui criar uma tag ```a``` dentro do ```li``` e definir o href como ```a.href = item.path```.
 
 Se você executar a função ```buildMenu``` agora, poderá ver que o menu já está montado na view, porém a navegação entre os menus ainda não funciona, então é isso que vamos fazer agora.
 
