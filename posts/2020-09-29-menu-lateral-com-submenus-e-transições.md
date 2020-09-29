@@ -30,6 +30,10 @@ Apenas criei um elemento usando a tag `aside`, defini um id para ela e usei a cl
 Na sequência vou criar algumas classes que vamos usar para as transições dos menus:
 
 ```CSS
+:root {
+    --speed: 400ms;
+}
+
 .menu-primary-enter {
     transform: translateX(-110%);
 }
@@ -95,21 +99,31 @@ O primeiro passo é criar a lista com os menus e submenus, para isso criei um ar
 ```Javascript
 const menu = [
     {
-        menu: 'aliments', label: 'Aliments', icon: '🍕', click: goToChild, child: [
-            { parent: 'aliments', menu: 'back', label: 'Back', icon: '<', click: backToParent },
-            { parent: 'aliments', menu: 'pizza', label: 'Pizza', icon: '🍕' },
-            { parent: 'aliments', menu: 'hamburguer', label: 'Hamburguer', icon: '🍔' },
-            { parent: 'aliments', menu: 'bacon', label: 'Bacon', icon: '🥓' },
+        parent: 'aliments',
+        label: 'Aliments',
+        icon: '🍕',
+        click: goToChild,
+        child: [
+            { parent: 'aliments', label: 'Back', icon: '<', click: backToParent },
+            { parent: 'aliments', label: 'Pizza', icon: '🍕' },
+            { parent: 'aliments', label: 'Hamburguer', icon: '🍔' },
+            { parent: 'aliments', label: 'Bacon', icon: '🥓' },
         ],
+        rightIcon: '>',
     },
     {
-        menu: 'colors', label: 'Colors', icon: '🖌', click: goToChild, child: [
-            { parent: 'colors', menu: 'back', label: 'Back', icon: '<', click: backToParent },
-            { parent: 'colors', menu: 'blue', label: 'Blue', icon: '🔵' },
-            { parent: 'colors', menu: 'yellow', label: 'Yellow', icon: '🟡' },
-            { parent: 'colors', menu: 'red', label: 'Red', icon: '🔴' },
-            { parent: 'colors', menu: 'green', label: 'Green', icon: '🟢' },
-        ]
+        parent: 'colors',
+        label: 'Colors',
+        icon: '🖌',
+        click: goToChild,
+        child: [
+            { parent: 'colors', label: 'Back', icon: '<', click: backToParent },
+            { parent: 'colors', label: 'Blue', icon: '🔵' },
+            { parent: 'colors', label: 'Yellow', icon: '🟡' },
+            { parent: 'colors', label: 'Red', icon: '🔴' },
+            { parent: 'colors', label: 'Green', icon: '🟢' },
+        ],
+        rightIcon: '>',
     }
 ]
 ```
@@ -120,33 +134,165 @@ Agora vamos desenvolver a função responsável por pegar esse array e criar os 
 
 ```Javascript
 const buildMenu = () => {
-    // pega o elemento sidebar
     const sidebar = document.getElementById("sidebar")
-    // cria um elemento ul que será o menu
     const mainMenu = document.createElement("ul");
-    // define uma classe e um id para esse elemento
     mainMenu.className = 'menu'
     mainMenu.id = 'menu'
-    // e então faz um map do nosso array
     menu.map(el => {
-        // para cada elemento do array vai criar um novo elemento usando a tag li
-        let li = document.createElement("li");
-        // define a classe que esse item de menu recebe
-        li.className = 'menu-item'
-        // e dentro desse li criamos o seguinte trecho html
-        li.innerHTML = `
-            <div class="icon">${el.icon}</div>
-            <span class="label">${el.label}</span>
-            <div>></div>
-        `
-        li.onclick = el.click
-        li.dataset.child = el.menu
-
+        let li = createMenuItem(el)
         mainMenu.appendChild(li)
         createChildMenu(el.child)
     })
     sidebar.appendChild(mainMenu)
-
 }
 ``` 
+
+O que a função ```buildMenu``` faz? Vou explicar: primeiro pegamos o elemento sidebar que já existe no DOM, é dentro desse elemento que vamos injetar nosso menu. Então criamos um elemento 'ul' e definimos uma classe e um id para ele (essa classe ainda vamos criar no css). Em seguida é feito um map no array ```menu``` onde para cada elemento desse array chamamos uma função que cria o item do menu e chamamos outra função que cria o menu filho. Por último fazemos um ```appendChild``` desse menu dentro da sidebar.
+
+Agora vamos criar a função ```createChildMenu```, que executamos dentro da função anterior.
+Essa função é muito parecida com a outra, apenas alguns detalhes que mudam:
+
+```Javascript
+const createChildMenu = (items) => {
+    const sidebar = document.getElementById("sidebar")
+    const menu = document.createElement("ul");
+    menu.className = 'menu menu-secondary-exit menu-secondary-exit-active'
+    menu.id = items[0].parent
+    items.map(el => {
+        let li = createMenuItem(el)
+        menu.appendChild(li)
+    })
+    sidebar.appendChild(menu)
+}
+```
+
+Novamente pegamos a sidebar e criamos um novo elemento. A diferença agora é que a classe recebida além da classe 'menu' o elemento recebe também as classes de menu secundário: ```menu menu-secondary-exit menu-secondary-exit-active```. O id do elemento não será mais 'menu', mas sim o nome do menu pai dele, fazemos isso acessando o primeiro elemento do array ```items``` e usando a propriedade ```parent```.
+E a outra diferença é que nessa função não usamos o array menu para fazer o map e criar os elementos, mas fazemos no array items que é recebido como argumento dessa função.
+
+Agora vamos criar a função ```createMenuItem```, que chamamos nas duas funções anteriores. Essa função é responsável por criar nossos itens de menu. Veja na sequência:
+
+```Javascript
+const createMenuItem = (item) => {
+    let li = document.createElement("li");
+    li.className = 'menu-item'
+    li.innerHTML = `    
+            <div class="icon">${item.icon}</div>
+            <span class="label">${item.label}</span>
+            <div>${item.rightIcon || ''}</div>
+        `
+    li.dataset.id = item.parent
+    li.onclick = item.click
+
+    return li
+}
+```
+
+Essa função recebe um elemento do array como parâmetro, e a responsabilidade dela é nos devolver um elemento ```li``` pronto para injetar dentro do menu.
+
+Se você executar a função ```buildMenu``` agora, poderá ver que o menu já está montado na view, porém a navegação entre os menus ainda não funciona, então é isso que vamos fazer agora.
+
+### Criando funções de navegação entre os menus
+
+Em seguinda vamos criar as duas funções que já estão sendo usadas la no nosso array de menus, ```goToChild``` e ```backToParent```, uma para navegar do menu principal para o menu secundário, e outra do menu secundário para o principal. Essas funções manipulam as classes CSS que criamos anteriormente, confira:
+
+```Javascript
+function goToChild(event) {
+    
+    const { id } = event.currentTarget.dataset
+
+    let moveIn = document.getElementById(id);
+    let moveOut = document.getElementById("menu");
+
+    moveIn.className = 'menu menu-secondary-enter menu-secondary-enter-active'
+    moveOut.className = 'menu menu-primary-exit menu-primary-exit-active'
+
+}
+
+function backToParent(event) {
+
+    const { id } = event.currentTarget.dataset
+
+    let moveIn = document.getElementById("menu");
+    let moveOut = document.getElementById(id);
+
+    moveIn.className = 'menu menu-primary-enter menu-primary-enter-active'
+    moveOut.className = 'menu menu-secondary-exit menu-secondary-exit-active'
+
+}
+```
+
+Nas duas funções recuperamos o id que definimos dentro do dataset do elemento lá na função que criava os menus.
+
+Na primeira função, o menu que vai sair da tela é o menu principal, chamei ele de ```moveOut```, e o menu que vem para a tela chamei de ```moveIn```. 
+
+Na segunda função, o menu que vai sair da tela é o menu secundário, e o que vem para a tela é o menu principal. Agora é bem simples, basta definir as classes corretas dos menus que estão entrando e saindo da tela e a navegação já vai estar funcionando.
+
+Por último, vamos estilizar nosso menu usando CSS.
+
+
+### Estilizando o menu usando CSS
+
+Durante o desenvolvimento do menu, você pode ter percebido que definimos algumas classes para os elementos. Agora é hora de criá-las.
+
+```CSS
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-wrapper {
+    padding: 0 0;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.089);
+    width: 300px;
+    min-height: 100vh;
+    position: relative;
+    will-change: width;
+}
+
+.menu {
+    overflow: hidden;
+    transition: all linear 0.4s;
+    padding: 10px;
+}
+
+.menu-item {
+    width: 280px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 250ms;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+    border-radius: 11px;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+    color: #3d5afe;
+    cursor: pointer;
+}
+
+.menu-item > .icon {
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 1rem;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item > .label {
+    flex: 1;
+}
+```
+
+Se você atualizar a página após adicionar o CSS vai perceber que o visual do menu mudou completamente. Agora sinta-se a vontade para estilizar seu menu da maneira que preferir. 😉
 
