@@ -3,10 +3,10 @@ import React from "react";
 import Avatar from "../Avatar";
 import SocialLinks from "../SocialLinks";
 import * as S from './styled'
-import { profile } from "./content";
+import { profile, profileEnglish } from "./content";
 
-const Profile = () => {
-    const { name, briefDescription, longDescription } = profile;
+const Profile = ({ lang = 'pt-br' }) => {
+    const { name, briefDescription, longDescription } = lang === 'pt-br' ? profile : profileEnglish;
 
     return (
         <S.Section>
