@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
       <GlobalStyles />
-      <TopAppBar></TopAppBar>
+      <TopAppBar />
       <LayoutMain>
         {children}
       </LayoutMain>
