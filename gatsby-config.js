@@ -61,6 +61,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'pt-br',
+        useLangKeyLayout: false
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
