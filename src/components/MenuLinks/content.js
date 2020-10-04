@@ -1,4 +1,4 @@
-const links = [
+export const linksPt = [
     {
         label: 'home',
         url: '/'
@@ -13,4 +13,13 @@ const links = [
     // }
 ];
 
-export default links
+export const linksEn = [
+    {
+        label: 'home',
+        url: '/en'
+    },
+    {
+        label: 'blog',
+        url: '/en/blog'
+    },
+];

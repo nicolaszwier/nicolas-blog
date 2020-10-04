@@ -8,7 +8,7 @@ const LastPosts = () => {
 
     const { allMarkdownRemark } = useStaticQuery(graphql`
          query LastPosts {
-            allMarkdownRemark(limit: 3, sort: {order: DESC, fields: frontmatter___date}) {
+             allMarkdownRemark(limit: 3, sort: {order: DESC, fields: frontmatter___date}, filter: {frontmatter: {language: {eq: "pt-br"}}}) {
                 edges {
                     node {
                         fields {

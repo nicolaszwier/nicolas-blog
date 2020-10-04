@@ -4,11 +4,11 @@ import MenuLinks from "../MenuLinks";
 import { brand } from "./content";
 import * as S from './styled'
 
-const TopAppBar = () => (
+const TopAppBar = ({ lang }) => (
     <S.HeaderWrapper>
         <S.Header>
             <S.Brand>{brand}</S.Brand>
-            <MenuLinks />
+            <MenuLinks lang={lang} />
         </S.Header >
     </S.HeaderWrapper >
 )

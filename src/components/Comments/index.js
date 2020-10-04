@@ -4,12 +4,12 @@ import ReactDisqusComments from "react-disqus-comments"
 
 import * as S from "./styled"
 
-const Comments = ({ url, title }) => {
+const Comments = ({ url, title, lang = 'pt-br' }) => {
     const completeURL = `https://nicolasz.dev/${url}`
 
     return (
         <S.CommentsWrapper>
-            <S.CommentsTitle>Comentários</S.CommentsTitle>
+            <S.CommentsTitle>{lang === 'pt-br' ? 'Comentários' : 'Comments'}</S.CommentsTitle>
             <ReactDisqusComments
                 shortname="nicolaszdev"
                 identifier={completeURL}

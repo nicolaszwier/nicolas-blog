@@ -17,19 +17,16 @@ const LayoutMain = styled.main`
   width: 100%
 `
 
-const Layout = ({ children }) => {
-
-  return (
-    <LayoutWrapper>
-      <GlobalStyles />
-      <TopAppBar />
-      <LayoutMain>
-        {children}
-      </LayoutMain>
-      <Footer />
-    </LayoutWrapper>
-  )
-}
+const Layout = ({ children, lang = 'pt-br' }) => (
+  <LayoutWrapper>
+    <GlobalStyles />
+    <TopAppBar lang={lang} />
+    <LayoutMain>
+      {children}
+    </LayoutMain>
+    <Footer />
+  </LayoutWrapper>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

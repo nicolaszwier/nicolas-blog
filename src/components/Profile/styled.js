@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import media from "styled-media-query";
+import { Link } from "gatsby"
 
 export const Section = styled.section`
   display: flex;
@@ -54,4 +55,14 @@ ${media.lessThan("medium")`
   margin: .2rem .5rem; 
   `}
 
+`
+
+export const ChangeLanguageLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--textColorOnBackground);
+   &:hover{
+    transform: translateY(-1px);
+    color: var(--secondary);
+  }
 `

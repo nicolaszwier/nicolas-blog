@@ -19,3 +19,14 @@ export const profileEnglish = {
         `So far I have HTML, CSS, Javascript, React, AngularJS, Git, SQL, tests, TDD, Python and Delphi. Also, I've started learning data structures and algorithms.`,
     ]
 };
+
+export const languageLink = {
+    'pt-br': {
+        label: 'Change language to english',
+        url: '/en'
+    },
+    'en': {
+        label: 'Mudar idioma para português ',
+        url: '/'
+    },
+}

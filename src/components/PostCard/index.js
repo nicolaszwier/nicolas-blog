@@ -5,7 +5,7 @@ import Cover from './cover'
 
 import * as S from './styled'
 
-const PostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead }) => {
+const PostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead, language }) => {
 
     const resolveSlug = slug.slice(5)
     const resolveCoverPath = image.slice(12)
@@ -16,7 +16,7 @@ const PostCard = ({ slug, title, date, category, categoryBackground, image, time
             <Cover filename={resolveCoverPath} alt={title} />
             <S.PostTitle>{title}</S.PostTitle>
             <S.PostInfo>
-                <S.PostDate>{date} • {timeToRead} min de leitura</S.PostDate>
+                <S.PostDate>{date} • {timeToRead} {language === 'pt-br' ? 'min de leitura' : 'min read'} </S.PostDate>
                 <CategoryFlag category={category} categoryBackground={categoryBackground} />
             </S.PostInfo>
         </S.Card>
