@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       getNode,
       basePath: "pages",
     })
-    // Creates new query'able field with name of 'slug'
+    // Creates new query able field with name of 'slug'
     createNodeField({
       node,
       name: "slug",
@@ -19,7 +19,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
-
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -37,7 +36,8 @@ exports.createPages = ({ graphql, actions }) => {
               category
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
               description
-              title
+              title, 
+              language
             }
             timeToRead
           }
@@ -61,7 +61,8 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.language === 'pt-br')
+    const postsEnglish = result.data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.language === 'en')
 
     posts.forEach(({ node, next, previous }) => {
       createPage({
@@ -75,7 +76,19 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const postsPerPage = 6
+    postsEnglish.forEach(({ node, next, previous }) => {
+      createPage({
+        path: `en/${node.fields.slug}`,
+        component: path.resolve(`./src/templates/blog-post.en.js`),
+        context: {
+          slug: node.fields.slug,
+          previousPost: previous,
+          nextPost: next,
+        },
+      })
+    })
+
+    const postsPerPage = 15
     const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, index) => {
@@ -86,6 +99,20 @@ exports.createPages = ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: index * postsPerPage,
           numPages,
+          currentPage: index + 1,
+        },
+      })
+    })
+
+    const numPagesEnglish = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numPagesEnglish }).forEach((_, index) => {
+      createPage({
+        path: index === 0 ? `/en/blog` : `/en/blog/page/${index + 1}`,
+        component: path.resolve(`./src/templates/blog-list.en.js`),
+        context: {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPagesEnglish,
           currentPage: index + 1,
         },
       })
