@@ -6,6 +6,7 @@ date: 2020-09-28 09:35:14
 image: /assets/img/animated-sidebar-cover.png
 category: js
 categoryBackground: "#ffea00"
+language: pt-br
 ---
 ### Introdução
 

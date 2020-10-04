@@ -6,6 +6,7 @@ date: 2020-08-01 03:17:02
 image: /assets/img/responsive-modal.jpg
 category: js
 categoryBackground: "#ffea00"
+language: pt-br
 ---
 ### Introdução
 
