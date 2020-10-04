@@ -44,4 +44,10 @@ collections:
           { label: 'Misc', value: '#00e676' },
         ]
       }
+      - {
+        label: "Language",
+        name: "language",
+        widget: "select",
+        options: ["pt-br", "en"]
+      }
       - { label: "Body", name: "body", widget: "markdown" }
