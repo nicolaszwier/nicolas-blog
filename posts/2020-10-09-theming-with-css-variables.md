@@ -177,4 +177,4 @@ Thank's for reading! See you in the next post! Bye
 
 ### Links úteis sobre o assunto
 
-* [CSS variables.](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties)
+* [CSS variables.](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
