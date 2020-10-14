@@ -10,7 +10,7 @@ const BlogList = props => {
 
   return (
     <Layout lang="en">
-      <SEO title="Blog" />
+      <SEO lang="en" title="Blog" />
       <PostsList postList={postList} />
     </Layout>
   )
