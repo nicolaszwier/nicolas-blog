@@ -15,7 +15,7 @@ const BlogPost = ({ data, pageContext }) => {
 
   return (
     <Layout lang="en">
-      <SEO title={post.frontmatter.title} />
+      <SEO lang="en" title={post.frontmatter.title} />
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min read
