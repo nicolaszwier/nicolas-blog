@@ -20,13 +20,13 @@ First of all, I'll explain how the logic behind it will work, then we'll code th
 
 Have you ever realized how the infinite scroll works? 
 
-When you are scrolling the feed from a social media, the application fetches more data when the scrollbar became closer to the bottom.
+When you are scrolling the feed from a social media, the application fetches more data when the scroll bar became closer to the bottom.
 
 That's exactly how we'll gonna solve this problem. We're going to detect the scroll bar position at our screen, and, when she is near the bottom, a function will be called. Now, let's code!
 
 ### Coding the infite scroll
 
-First, I'm gonna make a piece of HTML and create a element to be our scrollable list. Check the result: 
+First, I'm gonna make a piece of HTML and create an element to be our scrollable list. Check the result: 
 
 ```HTML
 <section class="list" id="list">
@@ -34,7 +34,7 @@ First, I'm gonna make a piece of HTML and create a element to be our scrollable 
 </section>
 ```
 
-Just that? Yeah, you're right, it's just a element with an id to be identified later on javascript and a CSS class to style the list. You can put this list wherever you want in your application.
+Just that? Yeah, you're right, it's just an element with an id to be identified later on Javascript and a CSS class to style the list. You can put this list wherever you want in your application.
 
 Now, the Javascript:
 
@@ -45,15 +45,15 @@ window.onload = () => {
 }
 ```
 
-What does this code do? Well, first I'm runing my functions when the window loads, in your case, you'll problably need to run this functions in another situations, like when the component is rendered, or when the page loads, etc. As I have a simple script file, I choose to run when the window loads. 
+What does this code do? Well, first I'm running my functions when the window loads, in your case, you'll probably need to run this functions in another situations, like when the component is rendered, or when the page loads, etc. As I have a simple script file, I choose to run when the window loads. 
 
 The first line, I'm getting my list element by his id, and then, registering a function to the onscroll event. Which means every time the element is scrolled, this function will be called. Also, I'm calling the `loadMoreItens` function to start the list with some items.
 
 Next, let's create the `handleInfiniteScroll` function.
 
-As this function is called when the list is scrolled, by default the list element is available as a parameter, so we can use this element to handle when the page needs to load more itens. 
+As this function is called when the list is scrolled, by default the list element is available as a parameter, so we can use this element to handle when the page needs to load more items. 
 
-The logic is the following: if the height of the list, plus the position of the scroll to the top is greater or equal to the scroll height (including content not visible on the screen due to overflow), then load more itens: 
+The logic is the following: if the height of the list, plus the position of the scroll to the top is greater or equal to the scroll height (including content not visible on the screen due to overflow), then load more items: 
 
 ```Javascript
 const handleInfiniteScroll = (el) => {
