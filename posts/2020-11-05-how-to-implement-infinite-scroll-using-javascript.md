@@ -41,13 +41,13 @@ Now, the Javascript:
 ```Javascript
 window.onload = () => {
     (document.getElementById('list')).onscroll = (el) => handleInfiniteScroll(el)
-    loadMoreItens();
+    loadMoreItems();
 }
 ```
 
 What does this code do? Well, first I'm running my functions when the window loads, in your case, you'll probably need to run this functions in another situations, like when the component is rendered, or when the page loads, etc. As I have a simple script file, I choose to run when the window loads. 
 
-The first line, I'm getting my list element by his id, and then, registering a function to the onscroll event. Which means every time the element is scrolled, this function will be called. Also, I'm calling the `loadMoreItens` function to start the list with some items.
+The first line, I'm getting my list element by his id, and then, registering a function to the onscroll event. Which means every time the element is scrolled, this function will be called. Also, I'm calling the `loadMoreItems` function to start the list with some items.
 
 Next, let's create the `handleInfiniteScroll` function.
 
@@ -59,12 +59,12 @@ The logic is the following: if the height of the list, plus the position of the 
 const handleInfiniteScroll = (el) => {
     const element = el.srcElement;
     if ((element.offsetHeight + Math.ceil(element.scrollTop)) >= element.scrollHeight) {
-        loadMoreItens()
+        loadMoreItems()
     }
 }
 ```
 
-And at last, let's create the `loadMoreItens` function. 
+And at last, let's create the `loadMoreItems` function. 
 
 As this is just a simple tutorial to show how to create an infinite scroll, I'll just make a `for` loop to create some elements on the list. In a real scenario, this function would be responsable for perform an API request, or fetch data in a database, whatever. Then, you could append this new data on the list. 
 
@@ -72,7 +72,7 @@ The function looks like this:
 
 ```Javascript
 var currentItem = 1
-const loadMoreItens = () => {
+const loadMoreItems = () => {
     const list = document.getElementById('list')
     for (let i = 0; i < 11; i++) {
         const item = document.createElement("article")
