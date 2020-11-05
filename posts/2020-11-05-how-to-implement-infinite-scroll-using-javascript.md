@@ -24,7 +24,7 @@ When you are scrolling the feed from a social media, the application fetches mor
 
 That's exactly how we'll gonna solve this problem. We're going to detect the scroll bar position at our screen, and, when she is near the bottom, a function will be called. Now, let's code!
 
-### Coding the infite scroll
+### Coding the infinite scroll
 
 First, I'm gonna make a piece of HTML and create an element to be our scrollable list. Check the result: 
 
