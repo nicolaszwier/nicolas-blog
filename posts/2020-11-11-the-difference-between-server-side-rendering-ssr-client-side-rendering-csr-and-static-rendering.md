@@ -1,6 +1,5 @@
 ---
-title: The difference between Server Side Rendering (SSR), Client Side Rendering
-  (CSR) and Static Rendering
+title: Server Side Rendering (SSR), vs Client Side Rendering (CSR) vs Static Rendering
 description: What is SSR, CSR and Static Rendering, and what's the difference between them.
 date: 2020-11-11 07:57:17
 image: /assets/img/ssrxcsrxstatic.png
