@@ -6,7 +6,11 @@ import LastPosts from "../components/LastPosts";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description="Nicolas Zwierzykowski - Frontend developer | Blog pessoal sobre desenvolvimento web, JS, React, CSS e outras tecnologias."
+      image="/assets/img/cover.png"
+    />
     <Profile />
     <LastPosts />
   </Layout>

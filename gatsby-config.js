@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `nicolasz.dev`,
-    description: `Nicolas Zwierzykowski's personal website.`,
+    description: `Nicolas Zwierzykowski's blog about web development, JS, React, CSS and other cool technologies`,
     author: `@nicolaszwier`,
     siteUrl: `https://nicolasz.dev`
   },
@@ -55,6 +55,7 @@ module.exports = {
           },
           `gatsby-remark-lazy-load`,
           'gatsby-remark-prismjs',
+          'gatsby-plugin-sitemap'
         ],
       },
     },
@@ -70,13 +71,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `nicolasz.dev | Nicolas Zwierzykowski`,
+        short_name: `nicolasz.dev`,
+        description: `Nicolas Zwierzykowski - Software engineer | Personal website and blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        lang: `pt-br`,
+        background_color: `#212121`,
+        theme_color: `#212121`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`,
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `nicolasz.dev | Nicolas Zwierzykowski`,
+            short_name: `nicolasz.dev`,
+            description: `Nicolas Zwierzykowski - Software engineer | Personal website and blog`,
+          },
+        ],
       },
     },
     {
@@ -85,9 +97,7 @@ module.exports = {
         trackingId: "UA-172427936-1",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`
   ],
 }

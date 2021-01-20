@@ -10,7 +10,11 @@ const BlogList = props => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO
+        title="Blog | nicolasz.dev"
+        description="Nicolas Zwierzykowski - Frontend developer | Blog pessoal sobre desenvolvimento web, JS, React, CSS e outras tecnologias."
+        image="/assets/img/cover.png"
+      />
       <PostsList postList={postList} />
     </Layout>
   )
