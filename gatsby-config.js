@@ -76,7 +76,7 @@ module.exports = {
         description: `Nicolas Zwierzykowski - Software engineer | Personal website and blog`,
         start_url: `/`,
         lang: `pt-br`,
-        background_color: `#212121`,
+        background_color: `#3d5afe`,
         theme_color: `#212121`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
