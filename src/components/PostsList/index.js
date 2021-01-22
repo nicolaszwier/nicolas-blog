@@ -16,6 +16,7 @@ const PostsList = ({ postList }) => {
                             fields: { slug },
                         },
                     }) => (
+                        <S.ListItemWrapper>
                             <PostCard
                                 slug={slug}
                                 title={title}
@@ -26,7 +27,8 @@ const PostsList = ({ postList }) => {
                                 image={image}
                                 language={language}
                             />
-                        )
+                        </S.ListItemWrapper>
+                    )
                 )}
             </S.PostsListWrapper>
         </S.Section>

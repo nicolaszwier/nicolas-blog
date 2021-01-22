@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Img from 'gatsby-image'
 import { Link } from "gatsby"
 
-
 export const Card = styled(Link)`
   text-decoration: none;
   display: flex;
@@ -21,10 +20,10 @@ export const Card = styled(Link)`
   margin: 1rem 0;
   opacity: 0.95;
   &:hover{
-      opacity: 1;
-      transform: translateY(-4px);
-      filter: brightness(95%);
-      box-shadow: 1px 1px 4px #0000007d;
+    opacity: 1;
+    transform: translateY(-4px);
+    filter: brightness(95%);
+    box-shadow: 1px 1px 4px #0000007d;
   }
 `
 
