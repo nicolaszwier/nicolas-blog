@@ -1,2 +1,2 @@
-export const footerContent = `nicolasz.dev - 2020 | 
+export const footerContent = `nicolasz.dev - 2021 | 
 Developed by Nicolas Zwierzykowski`;
