@@ -45,6 +45,6 @@ Por isso descanse um pouco, vá fazer algum hobbie seu ou apenas dar uma caminha
 
 Se você se identifica um pouco com o texto, deixe seu comentário sobre sua experiência.
 
-Obrigado e até a proxima!
+Obrigado e até a próxima!
 
 Nicolas
