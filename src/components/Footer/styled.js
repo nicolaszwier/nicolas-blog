@@ -9,7 +9,7 @@ export const Footer = styled.footer`
   align-items:center;
   width: 100%;
   padding: 0 1.5rem;
-  margin-top: 4rem; 
+  margin-top: 6rem; 
 `
 
 export const FooterText = styled.span`
