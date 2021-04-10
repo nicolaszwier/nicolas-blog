@@ -2,8 +2,7 @@
 title: Concentração, produtividade e… frustração
 description: Nosso trabalho não é repetitivo e exige muita concentração,
   criatividade e é preciso pensar muito, então por isso é impossível ser
-  produtivo o tempo todo. Entender e aceitar isso é muito importante ou logo vai
-  acabar se frustrando.
+  produtivo o tempo todo.
 date: 2021-04-09 02:08:47
 image: /assets/img/multitasking_2.jpg
 category: misc
@@ -12,11 +11,11 @@ language: pt-br
 ---
 ### Um dia daqueles...
 
-Enquanto estou escrevendo esse texto estou em um daqueles dias em que está bem difícil sentar na cadeira e começar a trabalhar em alguma task sem minha cabeça ficar viajando pra muitos outros lugares diferentes, exceto ao trabalho que eu deveria estar focado agora.
+Enquanto estou escrevendo esse texto, estou em um daqueles dias em que está bem difícil sentar na cadeira e começar a trabalhar em alguma task, sem minha cabeça ficar viajando pra muitos outros lugares diferentes, exceto ao trabalho que eu deveria estar focado agora.
 
-As vezes entender o que uma tarefa está pedindo, pensar nas melhores soluções e aplicar alguma dessas soluções se torna uma coisa extremamente difícil quando sua cabeça está ao mesmo tempo pensando naquele assunto que você deveria estudar depois do trabalho, naquele curso que você comprou, assistiu duas aulas e ainda não terminou, ou se preocupando se você está dando conta do seu trabalho: "será que estou correspondendo as expectativas?", etc.
+As vezes entender o que uma tarefa está pedindo, pensar nas melhores soluções, e aplicar alguma dessas soluções se torna uma coisa extremamente difícil quando sua cabeça está ao mesmo tempo pensando naquele assunto que você deveria estudar depois do trabalho, naquele curso que você comprou, assistiu duas aulas e ainda não terminou, ou se preocupando se você está dando conta do seu trabalho: "será que estou correspondendo as expectativas?", etc.
 
-Veja, tudo isso está acontecendo ao mesmo tempo enquanto estou sentando olhando pra tela do computador tentando trabalhar e as horas passando, quando chega ao final de mais um dia você percebe que não fez (quase) nada e agora é mais uma coisa pra se preocupar na sua cabeça: o prazo para terminar aquela task está acabando e eu nao tive muito progresso ainda.
+Veja, tudo isso está acontecendo ao mesmo tempo enquanto estou sentando olhando pra tela do computador tentando trabalhar e as horas passando, quando chega ao final de mais um dia você percebe que não fez (quase) nada, e agora é mais uma coisa pra se preocupar na sua cabeça: o prazo para terminar aquela task está acabando e eu nao tive muito progresso ainda.
 
 Acontece então, que um de seus líderes vem e te fala o seguinte: *"Parabéns, continue assim, você está indo muito bem com suas tarefas"* (🤯). Como assim estou indo bem? Eu definitivamente não esperava por essa.
 
@@ -30,7 +29,7 @@ Calma aí que eu não tenho uma fórmula pra isso que vai melhorar sua produtivi
 
 Sim, é preciso se organizar. Mas eu não estou falando de criar uma rotina muito complexa e planejar nos mínimos detalhes o que eu vou fazer no meu dia. Quanto mais complexidade a gente adicionar a uma determinada tarefa, menos chance isso tem de funcionar ou de continuarmos fazendo isso após algum tempo. 
 
-O que tem me ajudado muito a não se perder no meio de tanta coisa pra fazer é anotar tarefas que tenho pra fazer hoje, da forma mais simples possível, até mesmo em um pedaço de papel. 
+O que tem me ajudado muito a não se perder no meio de tanta coisa pra fazer, é anotar tarefas que tenho pra fazer hoje, da forma mais simples possível, até mesmo em um pedaço de papel. 
 Isso me ajuda a organizar as coisas dentro da minha cabeça, me faz pensar: *"eu tenho essas tarefas pra concluir hoje, se eu terminar elas, então dever cumprido!* ✔*"*
 
 Então sempre ao terminar alguma coisa eu risco a tarefa, ou movo ela para a coluna de concluídos quando estou fazendo no computador. Ao fazer isso eu consigo ver que as coisas estão sendo feitas. E mesmo que não consiga terminar todas as tarefas, pelo menos um pouco daquela sensação de que não consegui fazer nada hoje vai embora: *"Ok, pelo menos fiz algumas delas".*
