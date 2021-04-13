@@ -2,9 +2,9 @@ export const profile = {
     name: `Nicolas Zwierzykowski`,
     briefDescription: `Frontend developer`,
     longDescription: [
-        `Olá, meu nome é Nicolas e eu sou Desenvolvedor Front-end, sou formado em Sistemas de Informação e atualmente trabalho na Softniel's, em União da Vitória/PR. Eu gosto muito da ideia de usar software para resolver todos os tipos de problemas e facilitar a vida de pessoas com isso. 
+        `Olá, meu nome é Nicolas e eu sou Desenvolvedor Front-end, eu gosto muito da ideia de usar software para resolver todos os tipos de problemas e facilitar a vida de pessoas com isso. 
         Gosto muito de aprender todos os dias e facilmente aprendo novas habilidades.`,
-        `Até o momento eu sei HTML, CSS, Javascript, React, AngularJS, Git, SQL, testes, TDD, Python e Delphi. Também estou aprendendo sobre estruturas de dados e algoritmos.`,
+        `Sou especialista em Front end, acho incrível construir interfaces de usuário e tenho boas noções de UI e UX. Também posso trabalhar no backend se necessário. Algumas das tecnologias que trabalho são: HTML, CSS, Javascript, React, NextJS, Angular, C#, Python, Git, SQL e TDD`,
     ]
 };
 
@@ -13,20 +13,19 @@ export const profileEnglish = {
     briefDescription: `Software engineer`,
     longDescription: [
         `Hi, my name is Nicolas and I'm a Software engineer, 
-        I have a degree in Information Systems and currently I work at Softniel's, in União da Vitória/PR - Brazil. 
-        I'm obsessed with the idea of ​​using software to solve all kinds of problems and make people's life easier with that. 
+         I'm think it's awesome the idea of using software to solve all kinds of problems and make people's life easier with that.
         I love to learn every day and I quickly learn new skills.`,
-        `So far I have HTML, CSS, Javascript, React, AngularJS, Git, SQL, tests, TDD, Python and Delphi. Also, I've started learning data structures and algorithms.`,
+        `I'm a Front end specialist, love to build user interfaces and I have good skills in UI and UX. But I can work on the backend as well. Here some of the techs I'm used to: HTML, CSS, Javascript, React, NextJS, Angular, C#, Python, Git, SQL and TDD`,
     ]
 };
 
 export const languageLink = {
     'pt-br': {
-        label: 'Change language to english',
+        label: 'Go to english version',
         url: '/en'
     },
     'en': {
-        label: 'Mudar idioma para português ',
+        label: 'Acessar site em português ',
         url: '/'
     },
 }
