@@ -13,7 +13,7 @@ export const profileEnglish = {
     briefDescription: `Software engineer`,
     longDescription: [
         `Hi, my name is Nicolas and I'm a Software engineer, 
-         I'm think it's awesome the idea of using software to solve all kinds of problems and make people's life easier with that.
+         I think it's awesome the idea of using software to solve all kinds of problems and make people's life easier with that.
         I love to learn every day and I quickly learn new skills.`,
         `I'm a Front end specialist, love to build user interfaces and I have good skills in UI and UX. But I can work on the backend as well. Here some of the techs I'm used to: HTML, CSS, Javascript, React, NextJS, Angular, C#, Python, Git, SQL and TDD`,
     ]
