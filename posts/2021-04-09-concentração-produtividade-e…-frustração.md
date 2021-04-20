@@ -40,7 +40,7 @@ Outra coisa que venho percebendo mais, é que nosso trabalho não é repetitivo 
 
 Talvez essa não será uma conclusão que você estava esperando, mas como falei anteriormente, não existe uma fórmula mágica da produtividade. Tem dias que são mais difíceis e que vamos produzir menos, que vai ser difícil se concentrar e que aquela tarefa chata não vai ser terminada. Mas aceitar isso numa boa também é importante. 
 
-Por isso descanse um pouco, vá fazer algum hobbie seu ou apenas dar uma caminhada (tanto faz, o importante é desligar um pouco do trabalho), porque amanhã é um novo dia , mas aquela task não vai se resolver sozinha rsrs.
+Por isso descanse um pouco, vá fazer algum hobbie seu ou apenas dar uma caminhada (tanto faz, o importante é desligar um pouco do trabalho), porque amanhã é um novo dia, e aquela task não vai se resolver sozinha rsrs.
 
 Se você se identifica um pouco com o texto, deixe seu comentário sobre sua experiência.
 
