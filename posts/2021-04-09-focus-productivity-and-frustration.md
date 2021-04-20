@@ -14,7 +14,7 @@ While I'm writing this text, I'm living in one of those days when it is pretty h
 
 Sometimes, understanding what a task is asking for, thinking about the best solutions, and actually apply any of these solutions become extremely hard when your mind is at the same time, thinking about that thing you should learn after work, in that course you bought, watched a few lessons and left the course, or just worried if you're doing a good job: "What if I'm not working well?".
 
-Look, all of this is happening at the same time while I'm sitting and looking for my computer screen trying to work. Then, after a few hours, the workday ends, and you realize that you did (almost) nothing, and now you have one more thing to worry about: The deadline for this task is soon, and I haven't ahd good progress yet.
+Look, all of this is happening at the same time while I'm sitting and looking for my computer screen trying to work. Then, after a few hours, the workday ends, and you realize that you did (almost) nothing, and now you have one more thing to worry about: The deadline for this task is soon, and I haven't had good progress yet.
 
 So what happens? Your leader comes to talk to you and says: "Hey, you're doing well, keep up the nice work" (🤯). What do you mean I'm doing well? I definitely didn't see that coming.
 
