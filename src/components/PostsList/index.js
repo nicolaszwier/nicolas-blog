@@ -15,8 +15,8 @@ const PostsList = ({ postList }) => {
                             timeToRead,
                             fields: { slug },
                         },
-                    }) => (
-                        <S.ListItemWrapper>
+                    }, index) => (
+                        <S.ListItemWrapper key={index}>
                             <PostCard
                                 slug={slug}
                                 title={title}

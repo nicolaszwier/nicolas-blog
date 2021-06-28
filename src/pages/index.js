@@ -5,7 +5,7 @@ import Profile from "../components/Profile";
 import LastPosts from "../components/LastPosts";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout lang="pt-br">
     <SEO
       title="Home"
       description="Nicolas Zwierzykowski - Frontend developer | Blog pessoal sobre desenvolvimento web, JS, React, CSS e outras tecnologias."

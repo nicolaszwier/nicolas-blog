@@ -1,11 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import * as S from './styled'
 
 const Cover = props => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         images: allFile(
           filter: { absolutePath: { regex: "/static/assets/img/" } }
@@ -15,27 +16,30 @@ const Cover = props => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 1280) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(
+                  width: 1280
+                  layout: CONSTRAINED
+                )
               }
             }
           }
         }
       }
     `}
-        render={data => {
-            const image = data.images.edges.find(n => {
-                return n.node.relativePath.includes(props.filename)
-            })
-            if (!image) {
-                return null
-            }
+    render={data => {
+      const image = data.images.edges.find(n => {
+        return n.node.relativePath.includes(props.filename)
+      })
+      if (!image) {
+        return null
+      }
 
-            const imageSizes = image.node.childImageSharp.sizes
-            return <S.ImageWrapper alt={props.alt} sizes={imageSizes} />
-        }}
-    />
+      const imageSizes = image.node.childImageSharp.gatsbyImageData
+      return <S.ImageWrapper>
+        <GatsbyImage alt={props.alt} image={imageSizes} />
+      </S.ImageWrapper>
+    }}
+  />
 )
 
 export default Cover

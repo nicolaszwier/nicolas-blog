@@ -21,6 +21,7 @@ export const PostsListWrapper = styled.article`
   grid-template-columns: auto;
 	justify-content: stretch;
   gap: 0 2rem;
+  max-width: 1280px;
 
   ${media.lessThan("medium")`
     display: flex;

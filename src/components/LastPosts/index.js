@@ -46,17 +46,17 @@ const LastPosts = () => {
                                     fields: { slug },
                                 },
                             }) => (
-                                    <LastPostsPostCard
-                                        key={title}
-                                        slug={slug}
-                                        title={title}
-                                        date={date}
-                                        category={category}
-                                        categoryBackground={categoryBackground}
-                                        timeToRead={timeToRead}
-                                        image={image}
-                                    />
-                                )
+                                <LastPostsPostCard
+                                    key={title}
+                                    slug={slug}
+                                    title={title}
+                                    date={date}
+                                    category={category}
+                                    categoryBackground={categoryBackground}
+                                    timeToRead={timeToRead}
+                                    image={image}
+                                />
+                            )
                         )}
                     </S.LastPostsWrapper>
                 </S.Section>

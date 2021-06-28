@@ -1,6 +1,5 @@
 
 import styled from "styled-components";
-import Img from 'gatsby-image'
 import { Link } from "gatsby"
 
 export const Card = styled(Link)`
@@ -28,13 +27,15 @@ export const Card = styled(Link)`
 
 `
 
-export const ImageWrapper = styled(Img)`
-  display: flex;
+export const ImageWrapper = styled.div`
   width: 100%;
-  min-height: 100px;
-  max-height: 180px;
+  .gatsby-image-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    max-height: 180px;
+  }
 `
-
 
 export const PostTitle = styled.h1`
 color: var(--textColorOnBackground);

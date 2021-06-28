@@ -1,6 +1,5 @@
 
 import styled from "styled-components";
-import { Link } from "gatsby"
 
 export const ChangeThemeWrapper = styled.li`
   margin-right:1rem;
@@ -12,7 +11,9 @@ export const ChangeThemeWrapper = styled.li`
     color: yellow;
   }
 `
-export const ChangeThemeToggle = styled(Link)`
+export const ChangeThemeToggle = styled.button`
+  background: none;
+  border: none;
   text-decoration: none;
   color: var(--textColorOnBackground);
   cursor: pointer;

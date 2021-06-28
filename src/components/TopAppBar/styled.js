@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
   opacity: 0.95;
   min-height: 6rem;
   width: 100%;
-  box-shadow: 0 1px 4px #00000036;
+  // box-shadow: 0 1px 4px #00000036;
   position: sticky;
   top:0;
   z-index: 1000;
