@@ -99,6 +99,67 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+
+                const completeUrl = `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.language == 'en' ? 'en/' : ''}${edge.node.fields.slug}`
+
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  category: edge.node.frontmatter.category,
+                  url: completeUrl,
+                  link: completeUrl,
+                  guid: completeUrl,
+                  custom_elements: [{ 'content:encoded': edge.node.html }]
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+                  edges {
+                    node {
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        description
+                        date
+                        category
+                        language
+                      }
+                      excerpt
+                      html
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/feed.xml',
+            title: 'Nicolas Zwierzykowski Blog - RSS Feed'
+          }
+        ]
+      }
+    },
   ],
 }
