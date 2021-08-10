@@ -10,7 +10,7 @@ const Avatar = () => {
                 src="../../images/avatar.jpg"
                 alt="Nicolas Zwierzykowski Avatar"
                 placeholder="blurred"
-                style={{ borderRadius: '50%' }}
+                imgStyle={{ borderRadius: '50%' }}
             />
         </S.AvatarWrapper>
     )
