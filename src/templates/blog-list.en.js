@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostsList from "../components/PostsList"
 
 const BlogList = props => {
@@ -10,7 +10,7 @@ const BlogList = props => {
 
   return (
     <Layout lang="en">
-      <SEO
+      <Seo
         lang="en"
         title="Blog | nicolasz.dev"
         description="Nicolas Zwierzykowski - Software engineer | Blog about web development, JS, React, CSS and other cool technologies"

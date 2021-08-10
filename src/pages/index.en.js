@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Profile from "../components/Profile";
 import LastPosts from "../components/LastPosts/index.en";
 
 const IndexPage = () => (
   <Layout lang="en">
-    <SEO
+    <Seo
       lang="en"
       title="Home"
       description="Nicolas Zwierzykowski - Software engineer | Personal website and blog"
