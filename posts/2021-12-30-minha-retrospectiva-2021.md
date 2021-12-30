@@ -1,8 +1,9 @@
 ---
 title: Minha retrospectiva 2021
-description: Um pouco sobre como foi o meu ano de 2021
+description: Um pouco sobre como foi o meu ano de 2021, trocas de emprego,
+  palestra e um objetivo pessoal cumprido.
 date: 2021-12-30 12:09:20
-image: https://cio.com.br/wp-content/uploads/2020/12/Tende%CC%82ncias-em-TI-2021.jpg
+image: /assets/img/2021.jpeg
 category: misc
 categoryBackground: "#00e676"
 language: pt-br
@@ -22,6 +23,8 @@ Fiquei nessa empresa por oito meses, foi uma experiência muito boa, aprendi bas
 Agora, pulando para o início de setembro, estava um dia no Twitter e vi um anúncio da comunidade He4rt Developers, chamando pessoas para palestrarem em um evento deles que aconteceria no início de outubro, a He4rt Conf. Como eles aceitavam palestrantes iniciantes, pensei que essa poderia ser uma excelente oportunidade para minha primeira palestra, e me inscrevi, sem muita expectativa de que seria aceito. Alguns dias depois, recebi o email informando que minha palestra foi aceita para o evento, então agora eu teria quase um mês para preparar uma palestra sobre CSS Grid e Flexbox.
 
 Me preparei da melhor maneira possível, e no dia 2 de outubro, dei minha primeira palestra, e foi uma experiência incrível, melhor do que eu esperava, inclusive com vários pedidos para eu criar um canal no YouTube, ou começar a fazer lives de live-coding.
+
+![](/assets/img/he4rt-conf-palestra.png)
 
 ### A segunda troca de emprego
 
