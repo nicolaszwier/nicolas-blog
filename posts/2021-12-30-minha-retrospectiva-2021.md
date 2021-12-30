@@ -26,7 +26,7 @@ Me preparei da melhor maneira possível, e no dia 2 de outubro, dei minha primei
 
 ![](/assets/img/he4rt-conf-palestra-2021.png)
 
-### A segunda troca de emprego
+### A segunda troca de emprego 
 
 No meio de outubro, troquei de emprego novamente, continuo no trabalho remoto e como desenvolvedor frontend. Dessa vez entrei em uma empresa multinacional, e atualmente estou trabalhando em um projeto de uma grande empresa de telecomunicações canadense.
 
