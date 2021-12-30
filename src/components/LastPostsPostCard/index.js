@@ -6,7 +6,7 @@ import Cover from './cover'
 import * as S from './styled'
 
 const LastPostsPostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead, language = 'pt-br' }) => {
-    const resolveCoverPath = image.slice(21)
+    const resolveCoverPath = image.slice(12)
     return (
         <S.Card to={slug}>
             <Cover filename={resolveCoverPath} alt={title} />

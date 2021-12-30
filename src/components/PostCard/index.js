@@ -8,7 +8,7 @@ import * as S from './styled'
 const PostCard = ({ slug, title, date, category, categoryBackground, image, timeToRead, language }) => {
 
     const resolveSlug = slug.slice(5)
-    const resolveCoverPath = image.slice(21)
+    const resolveCoverPath = image.slice(12)
 
     return (
 
