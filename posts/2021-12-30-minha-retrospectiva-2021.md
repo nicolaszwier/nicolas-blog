@@ -24,7 +24,7 @@ Agora, pulando para o início de setembro, estava um dia no Twitter e vi um anú
 
 Me preparei da melhor maneira possível, e no dia 2 de outubro, dei minha primeira palestra, e foi uma experiência incrível, melhor do que eu esperava, inclusive com vários pedidos para eu criar um canal no YouTube, ou começar a fazer lives de live-coding.
 
-![](/assets/img/he4rt-conf-palestra.png)
+![](/assets/img/he4rt-conf-palestra-2021.png)
 
 ### A segunda troca de emprego
 
