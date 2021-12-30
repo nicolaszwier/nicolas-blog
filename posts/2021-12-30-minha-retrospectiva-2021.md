@@ -16,7 +16,7 @@ Depois de quase cinco anos trabalhando em uma empresa aqui da minha cidade, incl
 
 A esse ponto, meu inglês era razoável, eu conseguia entender bem e conseguia se comunicar bem, pelo menos quando não estava muito nervoso 😅, o que também faz parte. Como eu queria me sentir mais confortável falando inglês, eu fiz diversas aulas no Cambly, que me ajudaram muito na parte de conversação.
 
-Fiquei nessa empresa por oito meses, foi uma experiência muito boa, aprendi bastante nesse período e conheci pessoas muito competentes e gente boa.
+Fiquei nessa empresa por oito meses, foi uma experiência muito boa, aprendi bastante nesse período e conheci pessoas muito competentes.
 
 ### Minha primeira palestra
 
