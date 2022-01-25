@@ -1,2 +1,2 @@
-export const footerContent = `nicolasz.dev - 2022 | 
+export const footerContent = `nicolasz.dev - ${new Date().getFullYear()} | 
 Developed by Nicolas Zwierzykowski`;
