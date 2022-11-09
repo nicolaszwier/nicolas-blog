@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import media from "styled-media-query";
+import { Link } from "gatsby"
 
 export const HeaderWrapper = styled.div`
   background: var(--primary);
@@ -31,13 +32,16 @@ export const Header = styled.header`
   `}
 `
 
-export const Brand = styled.h1`
+export const BrandLink = styled(Link)`
+  text-decoration: none;
   font-size: 1.7rem;
   font-weight: bold;
-  color: var(--secondary);
   white-space: nowrap;
   overflow: hidden;
   ${media.lessThan("medium")`
     font-size: 1.4rem;
   `}
+  background: -webkit-linear-gradient(45deg, #3d5afe, #ff7676);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `

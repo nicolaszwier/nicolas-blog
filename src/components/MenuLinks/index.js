@@ -1,7 +1,5 @@
 import React from "react";
-
 import ChangeTheme from "../ChangeTheme";
-
 import * as S from './styled'
 import { linksPt, linksEn } from './content'
 

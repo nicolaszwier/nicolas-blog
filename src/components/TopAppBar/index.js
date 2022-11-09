@@ -7,7 +7,7 @@ import * as S from './styled'
 const TopAppBar = ({ lang }) => (
     <S.HeaderWrapper>
         <S.Header>
-            <S.Brand>{brand}</S.Brand>
+            <S.BrandLink to={lang === 'pt-br' ? '/' : '/en'}>{brand}</S.BrandLink>
             <MenuLinks lang={lang} />
         </S.Header >
     </S.HeaderWrapper >

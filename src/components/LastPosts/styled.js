@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 export const SectionWrapper = styled.div`
   display: flex;
-  background: var(--highlightDarker);
+  background-image: linear-gradient(45deg, var(--highlightDarkerStart), var(--highlightDarkerEnd));
   align-items:center;
   width: 100%;
   transform: skewY(-7deg);
