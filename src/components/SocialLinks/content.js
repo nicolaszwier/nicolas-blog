@@ -7,10 +7,10 @@ const links = [
         label: 'Linkedin',
         url: 'https://www.linkedin.com/in/nicolaszwier/?locale=en_US'
     },
-    {
-        label: 'Twitter',
-        url: 'https://twitter.com/nicolaszwier'
-    },
+    // {
+    //     label: 'Twitter',
+    //     url: 'https://twitter.com/nicolaszwier'
+    // },
     {
         label: 'Codepen',
         url: 'https://codepen.io/nicolaszwier'
