@@ -22,7 +22,7 @@ As we can see, avoiding unsubscribing from observables can cause memory leaks in
 
 In our application, we were using `takeWhile()` to unsubscribe from the observables. Let’s see what the documentation says about this operator:
 
-> `[takeWhile](<https://rxjs.dev/api/index/function/takeWhile>)` subscribes and begins mirroring the source Observable. Each value emitted on the source is given to the `predicate` function which returns a boolean, representing a condition to be satisfied by the source values. The output Observable emits the source values until such time as the `predicate` returns false, at which point `[takeWhile](<https://rxjs.dev/api/index/function/takeWhile>)` stops mirroring the source Observable and completes the output Observable.
+> `takeWhile` subscribes and begins mirroring the source Observable. Each value emitted on the source is given to the `predicate` function which returns a boolean, representing a condition to be satisfied by the source values. The output Observable emits the source values until such time as the `predicate` returns false, at which point `takeWhile` stops mirroring the source Observable and completes the output Observable.
 
 As the documentation says, we have to provide a value that returns a boolean, when the result is true, it stops the subscription. Here is an example using `takeWhile()`:
 
@@ -62,8 +62,6 @@ Unlike the first example, in this one, we’re using a boolean variable to contr
 
 Based on this, we’ve decided to stop using `takeWhile()` to close subscriptions in our app.
 
-
-
 ### Solution
 
 We were massively using `takeWhile()` to control subscriptions all over the application, in almost every existent component, so any solution for this problem would require a lot of effort.
@@ -72,7 +70,7 @@ After some research in forums and the RxJS documentation itself, I learned about
 
 Let’s see how the RxJS documentation describes the takeUntil operator:
 
-> `[takeUntil](<https://rxjs.dev/api/index/function/takeUntil>)` subscribes and begins mirroring the source Observable. It also monitors a second Observable, `notifier` that you provide. If the `notifier` emits a value, the output Observable stops mirroring the source Observable and completes. If the `notifier` doesn't emit any value and completes then `[takeUntil](<https://rxjs.dev/api/index/function/takeUntil>)` will pass all values.
+> `takeUntil` subscribes and begins mirroring the source Observable. It also monitors a second Observable, `notifier` that you provide. If the `notifier` emits a value, the output Observable stops mirroring the source Observable and completes. If the `notifier` doesn't emit any value and completes then `takeUntil` will pass all values.
 
 Unlike the `takeWhile()` operator, `takeUntil()` doesn’t accept a function or a boolean value as the param, but an observable. This means that the subscription will stay active until this new observable emits a value. That’s it, pretty simple.
 
@@ -94,8 +92,6 @@ ngOnDestroy(): void {
   this.destroy$.complete();
 }
 ```
-
-
 
 In this example, when the component will be destroyed, our secondary notifier emits a value and then is completed. Doing this, the takeUntil operator receives this notification and closes the subscription, avoiding any subscriptions remaining open after the component is destroyed.
 
@@ -119,8 +115,6 @@ ngOnInit(): void {
 	});
 }
 ```
-
-
 
 When the `destroy$` subject emits a value, the observable returned by `takeUntil()` operator is completed. However, in this case, the subscription will still be open because of the Observable passed to `switchMap()`.
 
