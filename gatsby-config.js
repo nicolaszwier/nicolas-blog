@@ -109,8 +109,6 @@ module.exports = {
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: false,
-          // Defaults to https://www.googletagmanager.com
-          origin: "nicolasz.dev",
         },
       },
     },
