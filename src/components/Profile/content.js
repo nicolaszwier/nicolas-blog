@@ -2,9 +2,10 @@ export const profile = {
     name: `Nicolas Zwierzykowski`,
     briefDescription: `Frontend developer`,
     longDescription: [
-        `Olá, meu nome é Nicolas e eu sou Desenvolvedor Front-end, eu gosto muito da ideia de usar software para resolver todos os tipos de problemas e facilitar a vida de pessoas com isso. 
-        Gosto muito de aprender todos os dias e facilmente aprendo novas habilidades.`,
-        `Sou especialista em Front end, acho incrível construir interfaces de usuário e tenho boas noções de UI e UX. Também posso trabalhar no backend se necessário. Algumas das tecnologias que trabalho são: HTML, CSS, Javascript, React, NextJS, Angular, C#, Python, Git, SQL e TDD`,
+        `Olá, sou um dedicado Engenheiro de Software com amplo conhecimento em desenvolvimento Frontend. Sempre estou buscando aprender coisas novas, o que me permite adquirir novas habilidades com destreza. Possuo bom conhecimento em areas relacionadas ao desenvolvimento de software, incluindo testes, resolução de problemas e arquitetura de software.
+        Como especialista em Frontend, sou proficiente na criação e desenvolvimento de interfaces de usuário que proporcionam experiências excepcionais aos usuários. Além disso, possuo a versatilidade necessária para contribuir com o desenvolvimento Backend quando necessário.`,
+        `Minhas habilidades de programação abrangem uma ampla gama, incluindo Javascript, Typescript, Python, MySQL e Postgres. Tenho ampla experiência em frameworks-chave, como React, NextJs, Angular 2+, Flask, NodeJS, bem como ferramentas como JEST e GatsbyJS. Além disso, tenho uma boa compreensão dos elementos essenciais da web, incluindo HTML, CSS, acessibilidade, Webpack e Contentful.
+        Esse conjunto de habilidades, combinado com meu esforço diário, me posiciona como um Engenheiro de Software altamente capaz e adaptável, preparado para se destacar em um ambiente profissional dinâmico e desafiador.`
     ]
 };
 
@@ -12,16 +13,16 @@ export const profileEnglish = {
     name: `Nicolas Zwierzykowski`,
     briefDescription: `Software engineer`,
     longDescription: [
-        `Hi, my name is Nicolas and I'm a Software engineer, 
-         I think it's awesome the idea of using software to solve all kinds of problems and make people's life easier with that.
-        I love to learn every day and I quickly learn new skills.`,
-        `I'm a Front end specialist, love to build user interfaces and I have good skills in UI and UX. But I can work on the backend as well. Here some of the techs I'm used to: HTML, CSS, Javascript, React, NextJS, Angular, C#, Python, Git, SQL and TDD`,
+        `Hey there, I am a dedicated Software Engineer with a strong knowledge of Frontend development. My professional profile is defined by a profound commitment to continuous learning, enabling me to adeptly acquire new skills. I excel in various aspects of software development, including testing, problem-solving, and software architecture.
+        As a Frontend Specialist, I am proficient in designing and developing user interfaces that offer exceptional user experiences. Additionally, I possess the versatility to contribute to Backend development as necessary.`,
+        `My programming skills encompass a broad spectrum, encompassing Javascript, Typescript, Python, MySQL, and Postgres. I have extensive experience with key frameworks such as React, NextJs, Angular 2+, Flask, NodeJS and tools like JEST, and GatsbyJS. Furthermore, I have a comprehensive understanding of web essentials, including HTML, CSS, accessibility, Webpack, and Contentful.
+        This skill set, combined with my commitment to excellence, positions me as a highly capable and adaptable Software Engineer, prepared to excel in a dynamic and challenging professional environment.`
     ]
 };
 
 export const languageLink = {
     'pt-br': {
-        label: 'Go to english version',
+        label: 'Change to english',
         url: '/en'
     },
     'en': {
