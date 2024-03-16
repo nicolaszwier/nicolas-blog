@@ -9,7 +9,7 @@ category: misc
 categoryBackground: "#00e676"
 language: pt-br
 ---
-### Como começou
+## Como começou
 
 Para dar um pouco de contexto, vou explicar um pouco como ocorreu todo esse processo desde o momento que eu decidi que iria me mudar. Eu comecei a trabalhar nessa empresa em 2021, é uma empresa multinacional que possui clientes em muitos países diferentes, e oferece algumas oportunidades de realocação.
 
@@ -19,7 +19,7 @@ Como eu já estava trabalhando nessa empresa por mais de dois anos eu já tinha 
 
 Isso nunca foi realmente um problema, nunca me prejudicou no meu dia a dia, porém mesmo assim em muitos momentos eu me sentia um pouco inseguro, pois eu me cobrava demais em relação a isso por as vezes não conseguir me expressar da forma que eu realmente queria. Com o passar do tempo foi melhorando, e deixou de ser uma preocupação pra mim, hoje eu já me sinto muito mais confortável conversando nesse idioma.
 
-### A chegada
+## A chegada
 
 Eu nunca tinha saído do Brasil antes, a primeira vez tendo essa experiencia eu estava indo sozinho, e para ficar. Quando eu estava no avião, chegando a hora de pousar em Toronto, eu lembro que estava sentindo um misto de emoções, realizado por isso estar finalmente acontecendo, feliz, mas também um com pouco de medo: *“Isso realmente está acontecendo, eu estou chegando em outro país sozinho e não tenho passagem de volta…”*, ou também *“será que fiz a escolha certa?”*, entre outras coisas, que acredito que fazem parte do processo em uma mudança desse tamanho.
 
@@ -27,7 +27,7 @@ Os primeiros dias no novo país foram bastante cansativos, burocracias para reso
 
 Alguns dias depois, conversando com algumas pessoas próximas a mim, eu comentei que na realidade eu estava muito mais preparado para essa mudança do que eu acreditava estar, pois eu estava conseguindo me adaptar bem, e resolver tudo que aparecia sem grandes problemas, e desde o primeiro dia, tudo pareceu muito natural, senti uma certa facilidade para lidar com as coisas desde a chegada no aeroporto, tendo que passar pela imigração falando em inglês, explicando o que eu ia fazer no país, aonde ia trabalhar, etc.
 
-### A cidade e a empresa
+## A cidade e a empresa
 
 Eu cheguei em Toronto no sábado, então tive a chance de conhecer um pouco da cidade no fim de semana, e na segunda feira, já seria meu primeiro dia indo para o escritório. A empresa funciona com um modelo de trabalho híbrido, então algumas vezes na semana eu tenho que ir trabalhar presencialmente. Eu gosto muito do trabalho remoto, de poder trabalhar de onde quiser, com horários flexíveis e outras vantagens, inclusive eu já vinha trabalhando remotamente por quase 3 anos, porém acredito que nessa nessa nova situação da minha vida, em um país novo, sem conhecer ninguém, ir para o escritório algumas vezes na semana poderia ser muito bom, iria conhecer melhor meus colegas de trabalho, e fazer algumas amizades.
 
@@ -39,7 +39,7 @@ Também, eu achei a dinâmica de trabalho um pouco diferente por aqui, eu tinha 
 
 Eu estou gostando dessa forma de trabalhar, alguns dias em casa, alguns dias no escritório aonde eu vou , faço o meu trabalho e vou embora, alguns momentos trabalhando sozinho para focar mais e entregar o que é preciso, e também alguns momentos de interação com o time, em reuniões presenciais, almoços, conversas, que considero importante também para se conectar melhor com meus colegas.
 
-### Conclusões até aqui
+## Conclusões até aqui
 
 Mesmo com algumas dificuldades pelo caminho, eu venho gostando muito do que o Canadá vem me oferecendo, Toronto é uma cidade multicultural aonde estou tendo a oportunidade de conversar com pessoas de muitos lugares desse mundo, experimentar comidas de outros países, e visitar lugares muito fodas.
 
