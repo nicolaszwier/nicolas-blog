@@ -5,7 +5,7 @@ description: Faz pouco mais de um mês desde que eu me mudei do Brasil para o
   compartilhar um pouco das minhas primeiras impressões do país.
 date: 2024-03-15 09:51:27
 image: /assets/img/toronto-skyline.webp
-category: misc
+category: career
 categoryBackground: "#00e676"
 language: pt-br
 ---
