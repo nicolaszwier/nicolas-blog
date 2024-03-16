@@ -28,7 +28,7 @@ collections:
         label: "Category",
         name: "category",
         widget: "select",
-        options: ["css", "js", "html", "react", "angular", "dev", "misc"]
+        options: ["css", "js", "html", "react", "angular", "dev", "career"]
       }
       - {
         label: "Category background",
