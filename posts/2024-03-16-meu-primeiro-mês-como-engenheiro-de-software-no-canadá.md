@@ -41,11 +41,11 @@ Eu estou gostando dessa forma de trabalhar, alguns dias em casa, alguns dias no 
 
 ### Conclusões até aqui
 
-Mesmo com algumas dificuldades pelo caminho, eu venho gostando muito do que o Canada vem me oferecendo, Toronto é uma cidade multicultural aonde estou tendo a oportunidade de conversar com pessoas de muitos lugares desse mundo, experimentar comidas de outros países, e visitar lugares maravilhosos.
+Mesmo com algumas dificuldades pelo caminho, eu venho gostando muito do que o Canadá vem me oferecendo, Toronto é uma cidade multicultural aonde estou tendo a oportunidade de conversar com pessoas de muitos lugares desse mundo, experimentar comidas de outros países, e visitar lugares muito fodas.
 
 ![Uma foto comigo no centro da imagem e as Cataratas do Niagara ao fundo.](/assets/img/niagara-falls.jpeg "Uma foto comigo no centro da imagem e as Cataratas do Niagara ao fundo.")
 
-Por outro lado, estar longe da namorada, família e amigos não é nada fácil, tem momentos que a saudade aperta e a vontade é pegar o próximo avião pro Brasil. Também, outras coisas simples que estamos tão acostumados no dia-a-dia que nem percebemos, como comer um simples arroz e feijão no almoço e até ouvir pessoas conversando em português em qualquer lugar. Sei que tudo isso faz parte e que aos poucos a gente se adapta e tudo vai ficando mais natural.
+Por outro lado, estar longe da namorada, família e amigos não é nada fácil, tem momentos que a saudade aperta e a vontade é pegar o próximo avião pro Brasil. Também, outras coisas simples que estamos tão acostumados no dia a dia que nem percebemos, como comer um simples arroz e feijão no almoço e até ouvir pessoas conversando em português em qualquer lugar. Sei que tudo isso faz parte e que aos poucos a gente se adapta e tudo vai ficando mais natural.
 
 O que eu posso dizer até agora é que tem sido uma experiência incrível, que com certeza vai agregar muito para meu crescimento pessoal e profissional.
 
