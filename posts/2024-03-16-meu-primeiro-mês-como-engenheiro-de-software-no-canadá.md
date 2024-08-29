@@ -5,7 +5,7 @@ description: Faz pouco mais de um mês desde que eu me mudei do Brasil para o
   compartilhar um pouco das minhas primeiras impressões do país.
 date: 2024-03-15 09:51:27
 image: /assets/img/toronto-skyline.webp
-category: misc
+category: career
 categoryBackground: "#00e676"
 language: pt-br
 ---
@@ -41,7 +41,7 @@ Eu estou gostando dessa forma de trabalhar, alguns dias em casa, alguns dias no 
 
 ## Conclusões até aqui
 
-Mesmo com algumas dificuldades pelo caminho, eu venho gostando muito do que o Canadá vem me oferecendo, Toronto é uma cidade multicultural aonde estou tendo a oportunidade de conversar com pessoas de muitos lugares desse mundo, experimentar comidas de outros países, visitar lugares muito fodas, e até tive a oportunidade de praticar snowboard, que por sinal é bem difícil
+Mesmo com algumas dificuldades pelo caminho, eu venho gostando muito do que o Canadá vem me oferecendo, Toronto é uma cidade multicultural aonde estou tendo a oportunidade de conversar com pessoas de muitos lugares desse mundo, experimentar comidas de outros países, visitar lugares muito fodas, e até tive a oportunidade de praticar snowboard, que por sinal é bem difícil.
 
 ![Uma foto comigo no centro da imagem e as Cataratas do Niagara ao fundo.](/assets/img/niagara-falls-and-me.jpeg "Uma foto comigo no centro da imagem e as Cataratas do Niagara ao fundo.")
 

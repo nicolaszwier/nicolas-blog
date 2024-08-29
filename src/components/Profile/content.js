@@ -13,10 +13,14 @@ export const profileEnglish = {
     name: `Nicolas Zwierzykowski`,
     briefDescription: `Software engineer`,
     longDescription: [
-        `Hey there, I am a Software Engineer with a strong knowledge of Frontend development. My professional profile is defined by a profound commitment to continuous learning, enabling me to adeptly acquire new skills. I excel in various aspects of software development, including testing, problem-solving, and software architecture.
-        As a Frontend Specialist, I am proficient in designing and developing user interfaces that offer exceptional user experiences. Additionally, I possess the versatility to contribute to Backend development as necessary.`,
-        `My programming skills encompass a broad spectrum, encompassing Javascript, Typescript, Python, MySQL, and Postgres. I have extensive experience with key frameworks such as React, NextJs, Angular 2+, Flask, NodeJS and tools like JEST, and GatsbyJS. Furthermore, I have a comprehensive understanding of web essentials, including HTML, CSS, accessibility, Webpack, and Contentful.
-        This skill set, combined with my commitment to excellence, positions me as a highly capable and adaptable Software Engineer, prepared to excel in a dynamic and challenging professional environment.`
+        `Software Engineer with 6 years of experience in web development, specializing in scalable, high-quality applications. I have contributed to various projects across multiple domains. 
+        I’ve recently been working in the telecommunication sector where I have played a key role in delivering high-quality and scalable products that offer great user experiences and are utilized by thousands of users daily, 
+        generating significant revenue for the company.`,
+        `Specialized in Frontend and Backend development, with experience in technologies such as Typescript, Angular, React, NodeJs, SQL, MongoDB, C#, .NET Core, among others.`
+        // `Hey there, I am a Software Engineer with a strong knowledge of Frontend development. My professional profile is defined by a profound commitment to continuous learning, enabling me to adeptly acquire new skills. I excel in various aspects of software development, including testing, problem-solving, and software architecture.
+        // As a Frontend Specialist, I am proficient in designing and developing user interfaces that offer exceptional user experiences. Additionally, I possess the versatility to contribute to Backend development as necessary.`,
+        // `My programming skills encompass a broad spectrum, encompassing Javascript, Typescript, Python, MySQL, and Postgres. I have extensive experience with key frameworks such as React, NextJs, Angular 2+, Flask, NodeJS and tools like JEST, and GatsbyJS. Furthermore, I have a comprehensive understanding of web essentials, including HTML, CSS, accessibility, Webpack, and Contentful.
+        // This skill set, combined with my commitment to excellence, positions me as a highly capable and adaptable Software Engineer, prepared to excel in a dynamic and challenging professional environment.`
     ]
 };
 
