@@ -9,7 +9,7 @@ export const FlagWrapper = styled.div`
   padding: .3rem 1rem;
   border-radius: 30px;
   max-width: 100px;
-  margin: 0 1rem 1rem;
+  margin: 0 1rem .5rem;
 `
 
 export const FlagName = styled.span`

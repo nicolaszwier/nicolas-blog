@@ -10,7 +10,7 @@ export const SectionWrapper = styled.div`
   transform: skewY(-7deg);
   min-height:5rem;
   margin: 2rem 0;
-  
+  border-radius: 16px;
 `
 export const SectionTitle = styled.h1`
   color: var(--secondary);

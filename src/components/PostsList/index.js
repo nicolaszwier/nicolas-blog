@@ -7,6 +7,7 @@ const PostsList = ({ postList }) => {
 
     return (
         <S.Section>
+            <S.PageTitle>Blog posts</S.PageTitle>
             <S.PostsListWrapper>
                 {postList.map(
                     ({

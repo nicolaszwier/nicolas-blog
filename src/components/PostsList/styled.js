@@ -15,12 +15,19 @@ export const Section = styled.section`
   `}
 `
 
+export const PageTitle = styled.h1`
+  color: var(--textColorOnBackground);
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem 1rem 3rem;
+`
+
 export const PostsListWrapper = styled.article`
   display: grid;
 	grid-template-rows: auto auto auto;
   grid-template-columns: auto;
 	justify-content: stretch;
-  gap: 0 2rem;
+  gap: 2rem;
   max-width: 1280px;
 
   ${media.lessThan("medium")`

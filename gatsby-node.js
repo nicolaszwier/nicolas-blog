@@ -105,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const numPagesEnglish = Math.ceil(posts.length / postsPerPage)
+    const numPagesEnglish = Math.ceil(postsEnglish.length / postsPerPage)
     Array.from({ length: numPagesEnglish }).forEach((_, index) => {
       createPage({
         path: index === 0 ? `/en/blog` : `/en/blog/page/${index + 1}`,

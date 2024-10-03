@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import Icons from "../SocialLinks/icons";
-
 import * as S from './styled'
-
 
 const ChangeTheme = () => {
     const [theme, setTheme] = useState(null);
@@ -14,7 +11,6 @@ const ChangeTheme = () => {
         setTheme(window.__theme)
         window.__onThemeChange = () => setTheme(window.__theme)
     }, [])
-
 
     return (
         <S.ChangeThemeWrapper
