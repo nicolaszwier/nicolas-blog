@@ -11,7 +11,7 @@ export const Card = styled(Link)`
   justify-content: space-between;
   align-items:flex-start;
   /* box-shadow: 1px 1px 4px #00000021; */
-  border: 1px solid var(--primary);
+  border: 2px solid var(--background);
   border-radius: 16px;
   cursor: pointer;
   transition: all .3s ease-in-out;

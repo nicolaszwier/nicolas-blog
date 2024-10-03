@@ -11,7 +11,7 @@ export const Card = styled(Link)`
   flex-direction:column;
   justify-content: space-between;
   align-items:flex-start;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--background);
   border-radius: 16px;
   cursor: pointer;
   transition: transform .3s ease-in-out;
