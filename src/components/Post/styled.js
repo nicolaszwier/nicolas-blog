@@ -3,8 +3,8 @@ import media from "styled-media-query";
 
 export const PostHeader = styled.header`
   color: var(--textColorOnBackground);
-  margin: auto;
-  max-width: 70rem;
+  /* margin: auto; */
+  max-width: 1280px;
   padding: 5rem 5rem 0;
   ${media.lessThan("medium")`
      padding: 2.5rem 1.4rem 1rem;
@@ -14,7 +14,7 @@ export const PostHeader = styled.header`
 export const PostTitle = styled.h1`
   font-size: 4rem;
   font-weight: 700;
-  padding: 0 1.4rem;
+  /* padding: 0 1.4rem; */
   margin: 1rem auto;
   
   ${media.lessThan("medium")`
@@ -24,9 +24,11 @@ export const PostTitle = styled.h1`
 `
 
 export const PostDescription = styled.h2`
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 200;
-  padding: 0 1.4rem;
+  /* padding: 0 1.4rem; */
+  font-style: italic;
+  color: var(--tertiaryTextColor);
  
   ${media.lessThan("medium")`
      padding: 0;
@@ -37,7 +39,8 @@ export const PostDescription = styled.h2`
 export const PostDate = styled.p`
   font-size: 1.1rem;
   font-weight: 100;
-  padding: 0 1.4rem;
+  /* padding: 0 1.4rem; */
+  color: var(--tertiaryTextColor);
 
   ${media.lessThan("medium")`
      padding: 0;
@@ -47,11 +50,11 @@ export const PostDate = styled.p`
 
 export const MainContent = styled.section`
   margin: auto;
-  max-width: 70rem;
+  max-width: 1280px;
   padding: 2rem 5rem;
   ${media.lessThan("medium")`
      padding: 1rem 0;
-  max-width: 100%;
+    max-width: 100%;
   `}
 
   p,
@@ -69,7 +72,7 @@ export const MainContent = styled.section`
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 0.03rem;
-    padding: 0 1.4rem;
+    /* padding: 0 1.4rem; */
 
     ${media.lessThan("medium")`
      padding: 0 1.4rem;

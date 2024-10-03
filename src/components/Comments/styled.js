@@ -7,7 +7,7 @@ justify-content: center;
 flex-direction: column;
 margin: auto;
 width: 100%;
-max-width: 70rem;
+max-width: 1280px;
 padding: 2rem 5rem;
 
 ${media.lessThan("medium")`

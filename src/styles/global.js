@@ -57,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
   
   body {
     &.dark {
@@ -66,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
       --secondary: #3D5AFE;
       --textColorOnBackground: #FFFFFF;
       --secondaryTextColor: rgba(255,255,255,0.90);
+      --tertiaryTextColor: #ffffff91;
       --highlight: #353535;
       --highlightDarkerStart: #222847;
       --highlightDarkerEnd: #784141;
@@ -79,6 +80,7 @@ const GlobalStyles = createGlobalStyle`
       --secondary: #3D5AFE;
       --textColorOnBackground: #000;
       --secondaryTextColor: #121212;
+      --tertiaryTextColor: #12121291;
       --highlightDarkerStart: #3D5AFE;
       --highlightDarkerEnd: #ff7676;
    
@@ -87,10 +89,12 @@ const GlobalStyles = createGlobalStyle`
     }
     
     line-height: 1;
-    font-size: 100%;
-    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0; 
   }
 
   /* width */
