@@ -57,7 +57,6 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
   
   body {
     &.dark {
@@ -106,7 +105,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--secondary);
+  background: var(--background);
   border-radius: 0px;
   width: 8px;
   /* border-left: 1px solid var(--primary) */
