@@ -66,7 +66,7 @@ export const MobileMenuOverlay = styled.div`
   display: none;
   position: fixed;
   display: flex;
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
   background: #00000040;
   /* justify-content: center; */
   /* align-items: center; */
