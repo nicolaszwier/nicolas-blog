@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Icons from "../SocialLinks/icons";
+import Icons from "../Icons";
 import * as S from './styled'
 
 const ChangeTheme = () => {
