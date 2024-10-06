@@ -80,7 +80,7 @@ module.exports = {
         background_color: `#3d5afe`,
         theme_color: `#212121`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/icon.png`,
         localize: [
           {
             start_url: `/en/`,
