@@ -40,8 +40,8 @@ export const Paragraph = styled.p`
 text-align: center;
 text-justify: distribute;
 color: var(--secondaryTextColor);
-font-weight: 400;
-font-size: 1.3rem;
+font-weight: 200;
+font-size: 1.2rem;
 line-height: 1.4;  
 margin: .5rem 2rem;
 &:first-child {
