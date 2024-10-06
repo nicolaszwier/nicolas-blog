@@ -51,7 +51,7 @@ const ProjectCard = ({ project, language, onOpenModal }) => {
                             className="link"
                             onClick={() => handleOpenModal()}
                         >
-                            See more details
+                           {language === 'en' ? 'See more details' : 'Ver mais detalhes'} 
                         </button>
                         {project.githubRepoUrl && 
                             <a href={project.githubRepoUrl} target="_blank">
