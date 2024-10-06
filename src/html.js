@@ -15,6 +15,9 @@ export default function HTML(props) {
           name="google-site-verification" 
           content="sbcRTRIZbfqOPrEXFBJ7_OsaczeHSwBD0Ca7gLqSV_Q" 
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="light">
