@@ -18,12 +18,6 @@ const Profile = ({ lang = 'pt-br' }) => {
             <SocialLinks />
             <S.Paragraph>{longDescription[0]}</S.Paragraph>
             <S.CustomLink to={urls[lang].aboutMe.url}>{seeMore} <Icons.ArrowSmRight /> </S.CustomLink>
-            <div>
-                {/* {longDescription.map((p, i) => (
-                    <S.Paragraph key={i}>{p}</S.Paragraph>
-                ))} */}
-            </div>
-
         </S.Section>
     )
 }
