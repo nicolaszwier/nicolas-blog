@@ -37,6 +37,14 @@ ${media.lessThan("medium")`
 `
 
 export const Paragraph = styled.p`
+height: 110px;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+
+
 text-align: center;
 text-justify: distribute;
 color: var(--secondaryTextColor);
@@ -65,4 +73,30 @@ export const ChangeLanguageLink = styled(Link)`
     transform: translateY(-1px);
     color: var(--secondary);
   }
+`
+
+export const CustomLink = styled(Link)`
+  padding: 0 2rem;
+  margin: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color: var(--textColorOnBackground);
+  &:hover{
+    color: var(--secondary);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    margin-left: 2px;
+  } 
+
+  ${media.lessThan("medium")`
+      margin: 0 1rem;
+      padding: 0 1rem;
+    `}
 `

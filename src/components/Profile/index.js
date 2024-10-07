@@ -1,23 +1,28 @@
 import React from "react";
-
 import Avatar from "../Avatar";
 import SocialLinks from "../SocialLinks";
 import * as S from './styled'
-import { profile, profileEnglish, languageLink } from "./content";
+import Icons from "../Icons";
+import { profile } from "../../data/i18n";
+import { urls } from "../../data/routes";
 
 const Profile = ({ lang = 'pt-br' }) => {
-    const { name, briefDescription, longDescription } = lang === 'pt-br' ? profile : profileEnglish;
-
+    const { name, briefDescription, longDescription, seeMore, languageToggle } = profile[lang]
+    
     return (
         <S.Section>
-            <S.ChangeLanguageLink to={languageLink[lang].url}>{languageLink[lang].label}</S.ChangeLanguageLink>
+            <S.ChangeLanguageLink to={lang === 'en' ? '/' : '/en'}>{languageToggle}</S.ChangeLanguageLink>
             <Avatar />
             <S.ProfileName>{name}</S.ProfileName>
             <S.BriefDescription>{briefDescription}</S.BriefDescription>
             <SocialLinks />
-            {longDescription.map((p, i) => (
-                <S.Paragraph key={i}>{p}</S.Paragraph>
-            ))}
+            <S.Paragraph>{longDescription[0]}</S.Paragraph>
+            <S.CustomLink to={urls[lang].aboutMe.url}>{seeMore} <Icons.ArrowSmRight /> </S.CustomLink>
+            <div>
+                {/* {longDescription.map((p, i) => (
+                    <S.Paragraph key={i}>{p}</S.Paragraph>
+                ))} */}
+            </div>
 
         </S.Section>
     )
