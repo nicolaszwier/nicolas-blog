@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import * as S from './styled';
 import LastPostsPostCard from '../LastPostsPostCard'
+import Icons from "../Icons";
 
 const LastPosts = () => {
 
@@ -32,9 +33,7 @@ const LastPosts = () => {
 
     return (
         <>
-            <S.Wrapper>
-                <S.SectionTitle>Últimos posts do blog</S.SectionTitle>
-            </S.Wrapper>
+            <S.SectionTitle>Últimos posts do blog</S.SectionTitle>
             <S.SectionWrapper>
                 <S.Section>
                     <S.LastPostsWrapper>
@@ -61,9 +60,7 @@ const LastPosts = () => {
                     </S.LastPostsWrapper>
                 </S.Section>
             </S.SectionWrapper>
-            <S.SeeAllPostsWrapper>
-                <S.SeeAllPostsLink to={'/blog'}>Ver todos os posts...</S.SeeAllPostsLink>
-            </S.SeeAllPostsWrapper>
+            <S.SeeAllPostsLink to={'/blog'}>Ver todos os posts <Icons.ArrowSmRight /></S.SeeAllPostsLink>
         </>
     )
 }

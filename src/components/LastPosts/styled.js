@@ -12,22 +12,16 @@ export const SectionWrapper = styled.div`
   margin: 2rem 0;
   border-radius: 16px;
 `
-export const SectionTitle = styled.h1`
-  color: var(--secondary);
-  font-weight:400;
-  font-size: 1.2rem;  
-  margin: 0 2rem;
+export const SectionTitle = styled.h2`
+  color: var(--secondaryTextColor);
+  font-weight:500;
+  font-size: 1.4rem;  
+  margin: 0 3rem;
 
    ${media.lessThan("medium")`
-      font-size: 1rem;  
-      margin: 0 1rem;
+      font-size: 1.2rem;  
+      margin: 0 2rem;
     `}
-`
-
-export const Wrapper = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1280px;
 `
 
 export const Section = styled.section`
@@ -63,11 +57,19 @@ export const SeeAllPostsLink = styled(Link)`
   margin: 0 2rem;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   text-decoration: none;
   color: var(--textColorOnBackground);
   &:hover{
     color: var(--secondary);
   }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    margin-left: 2px;
+  } 
 
   ${media.lessThan("medium")`
       margin: 0 1rem;
