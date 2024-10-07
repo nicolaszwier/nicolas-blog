@@ -16,15 +16,32 @@ import {
     Nextdotjs, 
     Tailwindcss,
     Apple,
-    Github as Git
+    Github as Github2,
+    Html5,
+    Css3,
+    Nodedotjs,
+    Mysql,
+    Postgresql,
+    Amazonaws,
+    Azuredevops,
+    Jest,
+    Jasmine,
+    Jira,
+    Contentful,
+    Git,
+    Sass,
+    Materialui,
 } from "styled-icons/simple-icons";
 import {Monitor as FilledMonitor} from "styled-icons/material-twotone"
-import {Close} from "styled-icons/material-rounded"
-import {MenuAlt3} from "styled-icons/heroicons-solid"
+import {Close, AccessibilityNew} from "styled-icons/material-rounded"
+import {MenuAlt3, ArrowSmRight} from "styled-icons/heroicons-solid"
+import {TestTube} from "styled-icons/remix-line"
+import {Kanban} from "styled-icons/bootstrap/"
 
 
 const Icons = {
     Github,
+    Github2,
     Twitter,
     Codepen,
     Instagram,
@@ -50,10 +67,27 @@ const Icons = {
     Nextdotjs, 
     Tailwindcss,
     Apple,
-    Git,
     FilledMonitor,
     Close,
-    MenuAlt3
+    MenuAlt3,
+    ArrowSmRight,
+    Html5,
+    Css3,
+    Nodedotjs,
+    Mysql,
+    Postgresql,
+    Amazonaws,
+    Azuredevops,
+    TestTube,
+    Jest,
+    Jasmine,
+    Jira,
+    Kanban,
+    AccessibilityNew,
+    Contentful,
+    Git,
+    Sass,
+    Materialui
 }
 
 export default Icons
