@@ -27,8 +27,8 @@ margin: 1rem 1rem 1rem;
 `
 export const Subtitle = styled.h2`
 color: var(--secondaryTextColor);
-/* font-weight: 400; */
-font-size: 1.2rem;  
+font-weight: 200; 
+font-size: 1.1rem;  
 margin: 0 1rem;
 line-height: 1.4;
 ${media.lessThan("medium")`

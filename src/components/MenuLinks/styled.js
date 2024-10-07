@@ -16,6 +16,9 @@ export const MenuLinksList = styled.ul`
 `
 
 export const MenuLinksItem = styled.li`
+  display: flex;
+  align-items: center;
+  color: var(--textColorOnBackground);
   margin-right:1rem;
   &:last-child{
     margin-right:0;
@@ -35,7 +38,7 @@ export const MenuLinksLink = styled(Link)`
   text-decoration: none;
   color: var(--textColorOnBackground);
    &:hover{
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
     color: var(--secondary);
   }
 `

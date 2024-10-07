@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ChangeTheme from "../ChangeTheme";
 import * as S from './styled';
 import Icons from "../Icons";
-import { linksPt, linksEn } from './content'
+import { urls } from "../../data/routes";
+import SocialLinks from "../SocialLinks";
 
 const MenuLinks = ({ lang }) => {
     const [isMenuVisible, setIsMenuVisible] = useState(false)
-    const links = lang === 'pt-br' ? linksPt : linksEn
 
     const handleMenuToggle = () => {
         setIsMenuVisible((last)=>!last)
@@ -22,11 +22,18 @@ const MenuLinks = ({ lang }) => {
         <>
             <S.MenuLinksWrapper>
                 <S.MenuLinksList>
-                    {links.map((link, i) => (
-                        <S.MenuLinksItem key={i}>
-                            <S.MenuLinksLink activeClassName="active" to={link.url}>{link.label}</S.MenuLinksLink>
-                        </S.MenuLinksItem>
-                    ))}
+                    <S.MenuLinksItem>
+                        <S.MenuLinksLink activeClassName="active" to={urls[lang].home.url}>{urls[lang].home.label}</S.MenuLinksLink>
+                    </S.MenuLinksItem>
+                    <S.MenuLinksItem>
+                        <S.MenuLinksLink activeClassName="active" to={urls[lang].blog.url}>{urls[lang].blog.label}</S.MenuLinksLink>
+                    </S.MenuLinksItem>
+                    <S.MenuLinksItem>
+                        <S.MenuLinksLink activeClassName="active" to={urls[lang].projects.url}>{urls[lang].projects.label}</S.MenuLinksLink>
+                    </S.MenuLinksItem>
+                    <S.MenuLinksItem>
+                        <S.MenuLinksLink activeClassName="active" to={urls[lang].aboutMe.url}>{urls[lang].aboutMe.label}</S.MenuLinksLink>
+                    </S.MenuLinksItem>
                     <ChangeTheme />
                 </S.MenuLinksList>
                 <S.MobileToggleButton onMouseUp={handleMenuToggle}>
@@ -37,12 +44,19 @@ const MenuLinks = ({ lang }) => {
                 <S.MobileMenuOverlay id="overlay" onMouseUp={handleOverlayClick}>
                     <S.MobileMenu>
                         <ul>
-                            {links.map((link, i) => (
-                                <S.MenuLinksItem key={i}>
-                                    <S.MenuLinksLink activeClassName="active" to={link.url}>{link.label}</S.MenuLinksLink>
-                                </S.MenuLinksItem>
-                            ))}
-                            <ChangeTheme />
+                            <S.MenuLinksItem>
+                                <S.MenuLinksLink activeClassName="active" to={urls[lang].home.url}>{urls[lang].home.label}</S.MenuLinksLink>
+                            </S.MenuLinksItem>
+                            <S.MenuLinksItem>
+                                <S.MenuLinksLink activeClassName="active" to={urls[lang].blog.url}>{urls[lang].blog.label}</S.MenuLinksLink>
+                            </S.MenuLinksItem>
+                            <S.MenuLinksItem>
+                                <S.MenuLinksLink activeClassName="active" to={urls[lang].projects.url}>{urls[lang].projects.label}</S.MenuLinksLink>
+                            </S.MenuLinksItem>
+                            <S.MenuLinksItem>
+                                <S.MenuLinksLink activeClassName="active" to={urls[lang].aboutMe.url}>{urls[lang].aboutMe.label}</S.MenuLinksLink>
+                            </S.MenuLinksItem>
+                            <ChangeTheme showLabel />
                         </ul>
                     </S.MobileMenu>
                 </S.MobileMenuOverlay>

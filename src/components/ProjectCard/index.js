@@ -55,7 +55,7 @@ const ProjectCard = ({ project, language, onOpenModal }) => {
                         </button>
                         {project.githubRepoUrl && 
                             <a href={project.githubRepoUrl} target="_blank">
-                                Github Repo <Icons.Git />
+                                Github Repo <Icons.Github2 />
                             </a>
                         }
                         {project.liveDemoUrl && 

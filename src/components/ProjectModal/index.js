@@ -45,7 +45,7 @@ const ProjectModal = ({ project, language, isOpen, onClose }) => {
                             <div className="actions">
                                 {project.githubRepoUrl && 
                                     <a href={project.githubRepoUrl} target="_blank">
-                                        Github Repo <Icons.Git />
+                                        Github Repo <Icons.Github2 />
                                     </a>
                                 }
                                 {project.liveDemoUrl && 
