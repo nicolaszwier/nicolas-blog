@@ -2,7 +2,9 @@
 import styled from "styled-components";
 
 export const ChangeThemeWrapper = styled.li`
-  margin-right:1rem;
+  display: flex;
+  align-items: center;
+  color: var(--textColorOnBackground);
   &:last-child{
     margin-right:0;
   }

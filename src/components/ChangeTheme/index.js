@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Icons from "../Icons";
 import * as S from './styled'
 
-const ChangeTheme = () => {
+const ChangeTheme = ({showLabel}) => {
     const [theme, setTheme] = useState(null);
     const isDarkMode = theme === "dark";
     const Icon = isDarkMode ? Icons['Sun'] : Icons['Moon'];
@@ -19,6 +19,7 @@ const ChangeTheme = () => {
                 window.__setPreferredTheme(isDarkMode ? "light" : "dark")
             }}
         >
+            {showLabel && 'change theme:'} 
             <S.ChangeThemeToggle>
                 <S.IconWrapper className={theme}>
                     <Icon />
