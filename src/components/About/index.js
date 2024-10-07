@@ -29,9 +29,9 @@ const About = ({ lang = 'pt-br' }) => {
             <S.Content>
                 <div dangerouslySetInnerHTML={{__html: subtitle}} />
                 <div className="actions">
-                    {/* <Link to={urls[lang].experience.url} >
+                    <Link to={urls[lang].experience.url} >
                         {experience}
-                    </Link> */}
+                    </Link>
                     <Link to={urls[lang].projects.url} >
                         {projects}
                     </Link>

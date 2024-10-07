@@ -25,6 +25,103 @@ export const profile = {
   }
 };
 
+export const experience = {
+  en: {
+    title: `My professional experience`,
+    subtitle: `Career Journey`,
+    about: 'See more information about me',
+    projects: 'See the projects I’m working on',
+    career: [
+      {
+        jobTitle: `Senior Software Engineer - Frontend Developer, Oct 2021 - Present`,
+        description: `
+          <h4>Tech Mahindra, Remote, Toronto, ON, Canada</h4>
+          <p>At Tech Mahindra, I contributed to building and optimizing scalable web applications. My focus was on delivering new features, improving frontend efficiency and enhancing the user interface for a platform used by thousands of users daily.</p>
+          <ul>
+              <li>Led the migration of legacy AngularJS applications to Angular 16, reducing load times and improving maintainability, increasinguser engagement and code quality.</li>
+              <li>Designed and implemented unit tests using Jest, increasing code coverage to 90%, which reduced production bugs.</li>
+              <li>Successfully delivered new features.</li>
+              <li>Identified and fixed a bug in the code that was causing memory leaks on the application, which led to an increase inperformance.</li>
+              <li>Delivery of high-quality and scalable web applications; Development of new features for the project; Migration of legacy projects still using AngularJS to newer versions; Unit testing; Pull Requests reviews;</li>
+              <li>Collaborated with cross-functional teams to deliver scalable web applications, driving high user satisfaction and engagement.</li>
+              <li>Developed and deployed new features in complex projects, ensuring robust performance and reliability.</li>
+          </ul>
+        `
+      }, 
+      {
+        jobTitle: `Software Engineer - Frontend Developer, Feb 2021 - Oct 2021`,
+        description: `
+          <h4>QAT Global, Remote, US Based Company</h4>
+          <ul>
+              <li>Successfully delivered new features.</li>
+              <li>Implemented unit tests using Jasmine.</li>
+              <li>Partnered with backend teams to integrate APIs, ensuring seamless data flow and application stability.</li>
+              <li>Developed and deployed custom UI components, elevating the application's visual appeal and functionality.</li>
+          </ul>
+        `
+      },
+      {
+        jobTitle: `Fullstack Developer / Test Analyst, May 2016 - Feb 2021`,
+        description: `
+          <h4>Softniel’s LTDA, União da Vitória, Brazil</h4>
+          <ul>
+              <li>Successfully developed and delivered products.</li>
+              <li>Implemented unit tests using Jest.</li>
+              <li>Contributed on the migration of a legacy system to the web which allowed everyone to access the system from anywhere.</li>
+          </ul>
+        `
+      },
+    ]
+  },
+  'pt-br': {
+    title: `Minha experiência profissional`,
+    subtitle: `Jornada de carreira`,
+    about: 'Veja mais informações sobre mim',
+    projects: 'Veja os projetos que estou trabalhando',
+    career: [
+      {
+        jobTitle: "Engenheiro de Software Sênior - Desenvolvedor Frontend, Outubro 2021 - Presente",
+        description: `
+          <h4>Tech Mahindra, Remoto, Toronto, ON, Canadá</h4>
+          <p>Na Tech Mahindra, contribuí para a construção e otimização de aplicativos web escaláveis. Meu foco foi entregar novos recursos, melhorar a eficiência do frontend e aprimorar a interface do usuário para uma plataforma utilizada por milhares de usuários diariamente.</p>
+          <ul>
+              <li>Liderei a migração de aplicativos legados do AngularJS para o Angular 16, reduzindo os tempos de carregamento e melhorando a manutenção, aumentando o engajamento do usuário e a qualidade do código.</li>
+              <li>Projetei e implementei testes unitários usando Jest, aumentando a cobertura do código para 90%, o que reduziu bugs de produção.</li>
+              <li>Entreguei com sucesso novas features.</li>
+              <li>Identifiquei e corrigi um bug no código que estava causando memory leaks no aplicativo, o que levou a um aumento no desempenho.</li>
+              <li>Entrega de aplicativos web escaláveis e de alta qualidade; Desenvolvimento de novos recursos para o projeto; Migração de projetos legados ainda usando AngularJS para versões mais recentes; Testes unitários; Revisões de Pull Requests;</li>
+              <li>Colaborei com equipes multifuncionais para entregar aplicativos web escaláveis, impulsionando alta satisfação e engajamento do usuário.</li>
+              <li>Desenvolvi e implantei novos recursos em projetos complexos, garantindo desempenho e confiabilidade.</li>
+          </ul>
+        `
+      },
+      {
+        jobTitle: "Engenheiro de Software - Desenvolvedor Frontend, Fevereiro 2021 - Outubro 2021",
+        description: `
+          <h4>QAT Global, Remoto, Empresa Baseada nos EUA</h4>
+          <ul>
+              <li>Entreguei com sucesso novas features.</li>
+              <li>Implementei testes unitários usando Jasmine.</li>
+              <li>Trabalhei com equipes de backend para integrar APIs, garantindo um fluxo de dados contínuo e estabilidade do aplicativo.</li>
+              <li>Desenvolvi e implantei componentes de UI personalizados, elevando o apelo visual e a funcionalidade do aplicativo.</li>
+          </ul>
+        `
+      },
+      {
+        jobTitle: "Desenvolvedor Fullstack / Analista de Testes, Maio 2016 - Fevereiro 2021",
+        description: `
+          <h4>Softniel’s LTDA, União da Vitória, Brasil</h4>
+          <ul>
+              <li>Desenvolvi e entreguei produtos com sucesso.</li>
+              <li>Implementei testes unitários usando Jest.</li>
+              <li>Contribui na migração de um sistema legado para a web, o que permitiu que todos acessassem o sistema de qualquer lugar.</li>
+          </ul>
+        `
+      },
+    ]
+  }
+}
+
 export const aboutMe = {
   en: {
     title: `About me`,

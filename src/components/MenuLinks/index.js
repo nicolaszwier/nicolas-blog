@@ -29,6 +29,9 @@ const MenuLinks = ({ lang }) => {
                         <S.MenuLinksLink activeClassName="active" to={urls[lang].blog.url}>{urls[lang].blog.label}</S.MenuLinksLink>
                     </S.MenuLinksItem>
                     <S.MenuLinksItem>
+                        <S.MenuLinksLink activeClassName="active" to={urls[lang].experience.url}>{urls[lang].experience.label}</S.MenuLinksLink>
+                    </S.MenuLinksItem>
+                    <S.MenuLinksItem>
                         <S.MenuLinksLink activeClassName="active" to={urls[lang].projects.url}>{urls[lang].projects.label}</S.MenuLinksLink>
                     </S.MenuLinksItem>
                     <S.MenuLinksItem>
@@ -49,6 +52,9 @@ const MenuLinks = ({ lang }) => {
                             </S.MenuLinksItem>
                             <S.MenuLinksItem>
                                 <S.MenuLinksLink activeClassName="active" to={urls[lang].blog.url}>{urls[lang].blog.label}</S.MenuLinksLink>
+                            </S.MenuLinksItem>
+                            <S.MenuLinksItem>
+                                <S.MenuLinksLink activeClassName="active" to={urls[lang].experience.url}>{urls[lang].experience.label}</S.MenuLinksLink>
                             </S.MenuLinksItem>
                             <S.MenuLinksItem>
                                 <S.MenuLinksLink activeClassName="active" to={urls[lang].projects.url}>{urls[lang].projects.label}</S.MenuLinksLink>
