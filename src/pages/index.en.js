@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout lang="en">
     <Seo
       lang="en"
-      title="Home"
+      title="nicolasz.dev | Home"
       description="Nicolas Zwierzykowski - Software engineer | Personal website and blog"
       image="/assets/img/cover.png"
     />

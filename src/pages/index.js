@@ -7,7 +7,7 @@ import LastPosts from "../components/LastPosts";
 const IndexPage = () => (
   <Layout lang="pt-br">
     <Seo
-      title="Home"
+      title="nicolasz.dev | Home"
       description="Nicolas Zwierzykowski - Frontend developer | Blog pessoal sobre desenvolvimento web, JS, React, CSS e outras tecnologias."
       image="/assets/img/cover.png"
     />
