@@ -25,7 +25,7 @@ export const urls = {
   'pt-br': {
     home: {
       label: 'home',
-      url: '/en'
+      url: '/'
     },
     blog: {
       label: 'blog',
