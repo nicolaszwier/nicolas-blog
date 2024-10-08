@@ -31,6 +31,7 @@ export const experience = {
     subtitle: `Career Journey`,
     about: 'See more information about me',
     projects: 'See the projects I’m working on',
+    resume: 'Download resume as PDF',
     career: [
       {
         jobTitle: `Senior Software Engineer - Frontend Developer, Oct 2021 - Present`,
@@ -78,6 +79,7 @@ export const experience = {
     subtitle: `Jornada de carreira`,
     about: 'Veja mais informações sobre mim',
     projects: 'Veja os projetos que estou trabalhando',
+    resume: 'Baixar currículo em PDF',
     career: [
       {
         jobTitle: "Engenheiro de Software Sênior - Desenvolvedor Frontend, Outubro 2021 - Presente",
@@ -146,6 +148,10 @@ export const aboutMe = {
         I am passionate about <strong>solving complex problems</strong>, continuously improving <strong>code quality</strong>, and 
         staying up-to-date with the latest trends in web development to deliver forward-thinking, future-proof solutions.
       </p>
+      
+      <p>
+        If you want to contact me please send an email to: <a href="mailto:nicolaszwier@gmail.com">nicolaszwier@gmail.com</a> or send a message on my <a href="https://www.linkedin.com/in/nicolaszwier/" target="__blank">LinkedIn</a>
+      </p>
   
     `,
     // subtitle: `
@@ -211,6 +217,9 @@ export const aboutMe = {
         me manter atualizado com as últimas tendências em desenvolvimento web para oferecer soluções inovadoras e preparadas para o futuro.
       </p>
 
+      <p>
+        Se você deseja entrar em contato comigo mande um email para: <a href="mailto:nicolaszwier@gmail.com">nicolaszwier@gmail.com</a> ou me envie uma mensagem no meu <a href="https://www.linkedin.com/in/nicolaszwier/" target="__blank">LinkedIn</a>
+      </p>
 
     `,
     experience: 'Veja minha experiência profissional completa',
