@@ -23,7 +23,7 @@ export const projects = [
                     <li><b>Track Your Transactions:</b> View your transactions in a clear, weekly timeline with balance updates.
                     <li><b>Planning Dashboard:</b> Get an overview of your balance and stay on top of upcoming payments.
                 </ul>
-                <p>You can check more information about this app on it’s landing page available here: https://wallet-wise-landing.vercel.app/</p>   
+                <p>You can check more information about this app on it’s landing page available here: https://walletwise.cash/</p>   
             `
         },
         'pt-br': {
@@ -38,7 +38,7 @@ export const projects = [
                     <li><b>Acompanhar Suas Transações:</b> Veja suas transações em uma linha do tempo semanal clara, com atualizações de saldo.</li>
                     <li><b>Painel de Planejamento:</b> Obtenha uma visão geral do seu saldo e fique por dentro dos próximos pagamentos.</li>
                 </ul>
-                <p>Você pode verificar mais informações sobre este aplicativo na sua página de apresentação disponível aqui: https://wallet-wise-landing.vercel.app/</p>
+                <p>Você pode verificar mais informações sobre este aplicativo na sua página de apresentação disponível aqui: https://walletwise.cash</p>
             `,
         },
         type: 'mobile',
@@ -112,7 +112,7 @@ export const projects = [
         },
         type: 'frontend',
         githubRepoUrl: 'https://github.com/nicolaszwier/wallet-wise-landing',
-        liveDemoUrl: 'https://wallet-wise-landing.vercel.app/',
+        liveDemoUrl: 'https://walletwise.cash',
         appStoreLink: null,
         stack: ['ReactJS', 'NextJS', 'Tailwind CSS']
     },
